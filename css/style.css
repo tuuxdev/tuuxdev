@@ -2794,8 +2794,6 @@ body::-webkit-scrollbar-thumb {
 .vbox-inline {
   position: relative;
   overflow-x: hidden;
-  height: 100vh !important;
-
 }
 
 .vbox-overlay {
