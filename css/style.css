@@ -2158,7 +2158,7 @@ main.st-main {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: rgba(0,0,0,.01);
+  background-color: rgba(0,0,0,.05);
 }
 
 body::-webkit-scrollbar {
@@ -2909,10 +2909,9 @@ td.stats-wrp h1 {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  height: 1px;
   font-family: "Helvetica Neue", Open Sans, sans-serif;
   text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.75)
+  background: #EEE;
 }
 
 .chart .percent i {
