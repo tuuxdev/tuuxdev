@@ -132,8 +132,8 @@
 				<h1>
 					I'm a
 					<strong id="changeText1">thinker</strong>
-					<br> focused on make
-					<br> things happen
+					<br> focused on turn
+					<br> idead into substance
 					<span class="sub-headline">I believe on design as the process to find and solve human needs, giving life to
 						functional, useful, beautiful and adaptable
 						experiences.
@@ -147,9 +147,9 @@
 			<div class="title scroll-move txt-es">
 				<h1 class="mn-head-home">
 					Soy un
-					<b>diseñador</b>
-					<br> enfocado en hacer
-					<br> que las cosas sucedan
+					<strong id="changeText2">diseñador</strong>
+					<br> enfocado en convertir
+					<br> ideas en substancia
 					<span class="sub-headline">Creo en el diseño como el proceso para encontrar y resolver las necesidades humanas,
 						dando vida a experiencias funcionales,
 						útiles, hermosos y adaptables.</span>
@@ -876,9 +876,13 @@
 							</div>
 							<div class="col-md-6">
 								<p class="txt-es">
-									La respuesta fue un blog completamente administrable bajo la plataforma WordPress con un theme 100% desarrollado para las necesidades del cliente. Actualmente cuenta con cientos de visitas al mes y se ha convertido uno delos principales medios de comunicación de la empresa. </p>
+									La respuesta fue un blog completamente administrable bajo la plataforma WordPress con un theme 100%
+									desarrollado para las necesidades del cliente. Actualmente cuenta con cientos de visitas al mes y se ha
+									convertido uno delos principales medios de comunicación de la empresa. </p>
 								<p class="txt-en">
-									The answer was a completely manageable blog under the platform WordPress with a theme 100% developed for the needs of the client. It currently has hundreds of visits a month and has become one of the main media of the company.</p>
+									The answer was a completely manageable blog under the platform WordPress with a theme 100% developed for the
+									needs of the client. It currently has hundreds of visits a month and has become one of the main media of the
+									company.</p>
 							</div>
 							<div class="col-md-3"></div>
 						</div>
@@ -2198,6 +2202,17 @@
 	<script src="js/plugins/venobox.js"></script>
 	<script src="js/plugins/scrollreveal.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script>
+		var $changer2 = $("#changeText2"),
+			i2 = 0,
+			speed = 200,
+			words2 = new Array;
+		words2[0] = "thinker", words2[1] = "mover", words2[2] = "doer", words2[3] = "designer", window.setInterval(function () {
+			$changer2.fadeOut(speed, function () {
+				$changer2.text(words[++i2 % words2.length]), $changer2.fadeIn(speed)
+			})
+		}, 3500);
+	</script>
 </body>
 
 </html>
