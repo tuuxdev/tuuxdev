@@ -2605,13 +2605,9 @@ body::-webkit-scrollbar-thumb {
 .portfolio-item {
   position: relative;
   width: 20vw;
-  height: 25vw;
+  height: 33.33vh;
   -ms-flex-positive: 1;
   flex-grow: 1
-}
-
-.portfolio-item.col-2x {
-  width: 40vw
 }
 
 .portfolio-item.col-2x:after {
