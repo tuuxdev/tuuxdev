@@ -2847,7 +2847,8 @@ body.vbox-open {
   padding: 5%;
   border-top: 2px solid;
   border-right: 2px solid;
-  border-color: #f1c40f !important
+  border-color: #f1c40f !important;
+  vertical-align: top;
 }
 
 .techne-wrp td h3 {
