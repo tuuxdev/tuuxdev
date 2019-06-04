@@ -3083,4 +3083,26 @@ td.stats-wrp h1 {
   }
 }
 
+.blog {
+  overflow: auto;
+}
+
+.blog h1,
+.blog h2,
+.blog h3 {
+  color: black;
+  text-transform: initial;
+}
+
+.blog .meta {
+  font-style: italic;
+  margin-bottom: 6%;
+}
+
+.blog main {
+  margin: auto;
+  max-width: 990px;;
+  padding: 5%;
+}
+
 /*# sourceMappingURL=style.css.map */
