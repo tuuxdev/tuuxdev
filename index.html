@@ -1,75 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="">
 
 <head>
+	<title>Tuuxstart</title>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Tuux / Designer</title>
-	<meta name="description" content="">
+	<meta name="description" content="The new awesome experience">
+	<meta name="keywords" content="Tuux, Tuuxdev, Tuuxstart">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/venobox/venobox.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="icon" type="image/png" href="favicon.png" />
 
-	<style>
-		.preloader {
-			display: flex;
-			align-items: center;
-			position: fixed;
-			text-align: center;
-			left: 0px;
-			top: 0px;
-			width: 100%;
-			height: 100%;
-			z-index: 7777777;
-			background: white;
-		}
-
-		.preloader .loader {
-			margin: 0 0 2em;
-			height: 40px;
-			width: 40px;
-			text-align: center;
-			padding: 1em;
-			margin: 0 auto 1em;
-			display: inline-block;
-			vertical-align: top;
-			background: url("../img/rolling.svg") no-repeat center;
-			background-size: cover;
-		}
-	</style>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script>
 		window.jQuery || document.write('<script src="js/vendor/jquery-2.2.4.min.js"><\/script>')
-	</script>
-
-	<script src="js/plugins/js.cookie.min.js"></script>
-	<script>
-		window.onload = function () {
-			if (Cookies.get('lang') == "en") {
-				$("body").removeClass("es").addClass("en");
-				$(".langswitch.es_ES").removeClass("active");
-				$(".langswitch.en_EN").addClass("active");
-				$(".wellcome-language").hide();
-				$("body").css({
-					overflow: 'auto'
-				});
-			} else if (Cookies.get('lang') == "es") {
-				$("body").removeClass("en").addClass("es");
-				$(".langswitch.en_EN").removeClass("active");
-				$(".langswitch.es_ES").addClass("active");
-				$(".wellcome-language").hide();
-				$("body").css({
-					overflow: 'auto'
-				});
-			}
-
-			$(".preloader").fadeOut(1200);
-		};
 	</script>
 
 	<!--[if lt IE 9]>
@@ -78,1401 +27,274 @@
   <![endif]-->
 </head>
 
-<body class="en">
+<body>
 	<!--[if gte IE 6 ]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-	<div class="preloader">
-		<div class="loader" title="2"></div>
-	</div>
-	<div class="wellcome-language">
-		<a href="javascript:;" class="wellcome-langswitch wellcome-en_EN">english</a>
-		<a href="javascript:;" class="wellcome-langswitch wellcome-es_ES">español</a>
-	</div>
-	<header class="cd-auto-hide-header">
-		<div class="logo">
-			<a href="#0">TUUX</a>
-		</div>
-		<nav class="cd-primary-nav">
-			<a href="#cd-navigation" class="nav-trigger">
-				<span>
-					<em aria-hidden="true"></em>
-				</span>
-			</a>
-			<ul class="main-nav" id="cd-navigation">
-				<li>
-					<a href="#about">ABOUT</a>
-				</li>
-				<li>
-					<a href="#process">THINKER</a>
-				</li>
-				<li>
-					<a href="#portfolio">MOVER</a>
-				</li>
-				<li>
-					<a href="#passion">DOER</a>
-				</li>
-				<li>
-					<a href="#touch">DESIGNER</a>
-				</li>
-				<li>
-					<a href="javascript:;" class="langswitch en_EN">en</a>
-				</li>
-				<li>
-					<a href="javascript:;" class="langswitch es_ES">es</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
 
-	<section class="tx-sec" id="about">
-		<div class="plx-header">
-			<div class="header-bg bg-about"></div>
-			<div class="title scroll-move txt-en">
-				<h1>
-					I'm a
-					<strong>human</strong>
-					<br> focused on turn
-					<br> ideas into substance
-					<span class="sub-headline">I believe in design as the process to find and solve human needs and achieve business goals, giving life to
-						functional, useful, beautiful and adaptable
-						experiences.
-					</span>
-				</h1>
-				<div>
-					<a class="fancylink" href="#process">HOW I WORK</a>
+	<main>
+		<div class="frame">
+			<div class="row">
+				<div class="col-left">
+					<div class="col_box bb8 avatar">
+					</div>
+					<div class="col_box bb8 p3">
+						<div class="middle-hack">
+							<h1>DANIEL TREJOS</h1>
+							<ul>
+								<li><i class="fa fa-envelope"></i> Email: daniel@tuux.co</li>
+								<li><i class="fa fa-map-marker"></i> Base: Bogotá, Colombia</li>
+								<li class="social-network pt2">
+									<a href="https://co.linkedin.com/in/daniel-trejos-360302ab" target="_blank">
+										<i class="fa fa-linkedin-square"></i>
+									</a>
+									<a href="https://www.behance.net/tuux" target="_blank">
+										<i class="fa fa-behance-square"></i>
+									</a><a href="https://soundcloud.com/totalinspector" target="_blank">
+										<i class="fa fa-youtube-square"></i>
+									</a>
+									<a href="https://github.com/tuuxdev" target="_blank">
+										<i class="fa fa-github-square"></i>
+									</a>
+									<a href="https://soundcloud.com/totalinspector" target="_blank">
+										<i class="fa fa-plus-square"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col_box bb8 p3">
+						<div class="middle-hack">
+							<h2>
+								I'M A <span class="text-light">HUMAN</span> FOCUSED ON TURN IDEAD INTO SUBSTANCE
+							</h2>
+							<p>
+								I believe in design as the process to find and solve human needs and achieve business goals, giving life
+								to functional, useful, beautiful and adaptable experiences.
+							</p>
+						</div>
+					</div>
+					<div class="col_box p3 mbb8">
+						<div class="middle-hack">
+							<h2>
+								STRENGTHS
+							</h2>
+							<p>Flexibility, Being a mediator, Business and strategic mindset, Love of learning, Listening and speech,
+								Passion, Critical thinking and analysis, Humility, Writing skills, Empathy [in search of compassion].
+							</p>
+						</div>
+					</div>
 				</div>
-			</div>
-			<!-- es_ES -->
-			<div class="title scroll-move txt-es">
-				<h1 class="mn-head-home">
-					Soy un
-					<strong>diseñador</strong>
-					<br> enfocado en convertir
-					<br> ideas en substancia
-					<span class="sub-headline">Creo en el diseño como el proceso para encontrar y resolver las necesidades humanas y alcanzar los objetivos del negocio, dando vida a experiencias funcionales, útiles, hermosos y adaptables.</span>
-				</h1>
-				<div>
-					<a class="fancylink" href="javascript:;">Mi Portafolio</a>
-				</div>
-			</div>
-			<!-- /es_ES -->
-		</div>
-	</section>
+				<div class="col-center bl8 br8 mblr-no">
+					<div class="col_box bb8 p3">
+						<div class="middle-hack">
+							<h2>
+								MY PROCESS
+							</h2>
+							<ul class="process">
+								<li>Research to understand the human needs and business goals behind the story and define the point of
+									view and motivations to rule the creation.</li>
+								<li>Sketching, prototyping and debating potential and possible solutions giving life to artifacts that solve the needs.</li>
+								<li>Test to find and fix weak points and inconsistencies.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col_box bb8 techne">
+						<div class="p3 dgrid">
+							<h2>
+								TECHNE
+							</h2>
+							<ul>
+								<li>Research</li>
+								<li>Wireframing and UI</li>
+								<li>Prototyping</li>
+								<li>Interaction Design</li>
+								<li>Visual Communication</li>
+								<li>Coding</li>
+								<li>Testing Feedback</li>
+							</ul>
+						</div>
 
-	<section class="tx-sec" id="process">
-		<div class="tblr-box">
-			<h3 class="tblr-box_headline txt-en">thinker
-				<span class="font-theme">[process]</span>
-			</h3>
-			<h3 class="tblr-box_headline txt-es">thinker
-				<span class="font-theme">[proceso]</span>
-			</h3>
-			<div class="tblr-box_content">
+						<div class="dgrid p3 bl8">
+							<p class="mt0">Over the years I've developed different skills and employ each one depending on project'
+								needs.</p>
+							<p>I use research techniques and information analysis to design human experiences and manipulate
+								tech tools to give life to visual designs. I create with code too.</p>
+						</div>
+					</div>
 
-				<div class="process-flow">
-					<div class="process-flow_item txt-en">EMPATHISE
-						<div>Researching to understand the human needs behind the story</div>
+					<div class="col_box p3 mbb8">
+						<div class="middle-hack">
+							<h2>
+								EPISTEME
+							</h2>
+							<p>I remember the world without computers and social network but made part of the internet revolution so I grow wanted to be a ruler breaker.</p>
+							<p>Now I'm an urban bicycle rider, amateur electronic music producer and idealist designer that believe in design more than a job to push pixels in a screen as a way of life to transform the world.</p>
+							<p>I love to create interfaces and experiences but the most important skill I want to achieve is the understand of human behaviors to create unique products.</p>
+						</div>
 					</div>
-					<div class="process-flow_item txt-en">DEFINE
-						<div>Choosing the point of view and motivations to rule the insights</div>
-					</div>
-					<div class="process-flow_item txt-en">IDEATE
-						<div>Sketching, prototyping and debating potential and posible solutions</div>
-					</div>
-					<div class="process-flow_item txt-en">CREATE
-						<div>Use my skills to give life to artifacts that solve the needs </div>
-					</div>
-					<div class="process-flow_item txt-en">TEST
-						<div>Find and fix weak points and inconcistences</div>
-					</div>
-					<!-- es_ES -->
-					<div class="process-flow_item txt-es">ENTENDO
-						<div>Investio para comprender las necesidades humanas que deben resolverse</div>
-					</div>
-					<div class="process-flow_item txt-es">DEFINO
-						<div>Descubro el punto de vista para gobernar la solución y el proceso de diseño</div>
-					</div>
-					<div class="process-flow_item txt-es">IDEO
-						<div>Trabajo en equipo o solo para esbozar las soluciones potenciales a los problemas</div>
-					</div>
-					<div class="process-flow_item txt-es">CREO
-						<div>Doy vida a los artefactos que resuelven las necesidades</div>
-					</div>
-					<div class="process-flow_item txt-es">TESTEO
-						<div>Encuentro y soluciono los puntos debiles e inconsitencias no identificadas</div>
-					</div>
-					<!-- /es_ES -->
 				</div>
-			</div>
-		</div>
-	</section>
+				<div class="col-right">
+					<div class="col_box p3">
+						<div class="middle-hack">
 
-	<section class="tx-sec" id="portfolio">
-		<div id="portfolio-headline" class="bg-theme padding-s">
-			<div style="padding-left: 130px;">
-				<h3 class="font-black txt-en">
-					MOVER
-					<span class="font-white">[CAREER]</span>
-				</h3>
-				<h3 class="font-black txt-es">
-					MOVER
-					<span class="font-white">[PORTAFOLIO]</span>
-				</h3>
-			</div>
-		</div>
+							<h2>GRUPO SANCHO CASE STUDY</h2>
+							<p class="mb2">Being the largest advertising and marketing company in Colombia and one of the biggest in
+								the world means taking on important
+								technological
+								challenges. Build a software that allows the employees to manage the operative, administrative and
+								financial tasks of the organization is one of them. </p>
 
-		<div class="pt-tuux">
-			<!-- PORTFOLIO ITEM -->
-			<article class="portfolio-item col-2x" id="post-328">
-				<a class="pt-image venobox" href="#modal-328" data-type="inline" data-gall="portfolio" data-pt-title="SOFTWAREONE LATAM"
-				 style="background-image: url(img/thumbs/thumb_softwareone.jpg);">
-					<div class="pt-overinfo">
-						<h2>SOFTWAREONE</h2>
-						<div class="partner">Pixelpro </div>
-					</div>
-				</a>
-				<div id="modal-328" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>SOFTWAREONE </h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">El
-										<br>Reto</span>
-									<span class="txt-en">The
-										<br>Challenge</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">En el pasado, trabajando como parte de una agencia, tuve la oportunidad de diseñar el blog
-									para la división LATAM
-									de la compañía. El resultado final fue muy positivo, por lo que la sede decidió contactarnos de nuevo para
-									diseñar
-									el blog global o la empresa.</p>
-								<p class="txt-en">In the past working as a part of an agency I had the oportunity to design the blog for the
-									LATAM division of the
-									company. The final result was very positive so the headquarter decided contact us again to design the global
-									blog
-									or the company.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li>
-											<a href="javascript:;">Custom CMS Development</a>
-										</li>
-										<li>
-											<a href="javascript:;">HTML - CSS - JavaScript</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Experience</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Interface</a>
-										</li>
-									</ul>
-								</div>
-								<img width="1140" height="500" src="img/thumbs/thumb_softwareone.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-								 alt="" />
-								<div class="with">
-									<h3>Working with:</h3>
-									<span class="partner">Pixelpro</span>
-									<span class="date">2016 - December</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">La
-										<br>Solución</span>
-									<span class="txt-en">The
-										<br>Answer</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">
-									Un diseño web tranquilo pero respresentativo de la marca, un desarrollo limpio y escalable que le permite a
-									la empresa y
-									sus colaboradores contar con una herramienta echa a su medida y que les permite sembrar la semilla de una
-									comunidad
-									entre sus usuarios y clientes.
-								</p>
-								<p class="txt-en">A calm but representative brand web design, a clean and scalable development that allows the
-									company and its collaborators
-									to have a tool that is tailored to them and that allows them to sow the seeds of a community among its users
-									and
-									clients. </p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<a href="http://blog.softwareone.com/" class="btn-block" target="_blank">visit the site</a>
-					</div>
-				</div>
-			</article>
-			<!-- /PORTFOLIO ITEM -->
-			<!-- PORTFOLIO ITEM -->
-			<article class="portfolio-item col-2x" id="post-321x">
-				<a class="pt-image venobox" href="#modal-321x" data-type="inline" data-gall="portfolio" data-pt-title="ERP PUBLICITARIO"
-				 style="background-image: url(img/thumbs/thumb_erp.jpg);">
-					<div class="pt-overinfo">
-						<h2>ERP PUBLICITARIO</h2>
-						<div class="partner">Grupo Sancho </div>
-					</div>
-				</a>
-				<div id="modal-321x" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>ERP PUBLICITARIO</h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">El
-										<br>Reto</span>
-									<span class="txt-en">The
-										<br>Challenge</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Diseñar para la casa matriz de la agencia publicitaria mas grade de mi pais y una de las mas
-									grandes del mundo (Sancho BBDO) ha sido quizas el reto mas grande de mi carrera. Ellos necesitaban unificar
-									varias piezas de software atomisado en un solo ERP que cumpliera con los requeriemitnos de toda la compañia y
-									yo sin dudarlo quize diseñar para ellos. </p>
-								<p class="txt-en">Designing for the headquarters of the largest advertising agency in my country and one of the
-									largest in the world (Sancho BBDO) has been perhaps the biggest challenge of my career. They needed to unify
-									several pieces of atomized software in a single ERP that complied with the requirements of the entire company
-									and without hesitation I wanted to design for them.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li>
-											<a href="javascript:;">UI/UX</a>
-										</li>
-										<li>
-											<a href="javascript:;">HTML - CSS - JavaScript</a>
-										</li>
-									</ul>
-								</div>
-								<img width="1814" height="1210" src="img/thumbs/thumb_erp.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-								 alt="" />
-								<div class="with">
-									<h3>Working with:</h3>
-									<span class="partner">Grupo Sancho</span>
-									<span class="date">2017 - Precent</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">La
-										<br>Solución</span>
-									<span class="txt-en">The
-										<br>Answer</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">
-									Crear y administrar un sistema de diseño de interfaz de usuario robusto, atomico y escalable es el climax de
-									cualquier diseñador UI. En esta labor he tenido que poner al servicio del equipo la mayoria de mis habilidades
-									(UX/UI/Frontend/Product Design/Brand..). Ha sido un trabajo duro pero lleno de satisfacciones y es mi actual
-									trabajo de tiempo completo.
-								</p>
-								<p class="txt-en">
-									Creating and managing a robust, atomic and scalable user interface design system is the climax of any UI
-									designer. In this work I have had to put most of my skills at the service of the team (UX / UI / Frontend /
-									Product Design / Brand) It has been a hard work but full of satisfactions and it's my current full-time
-									job.
-								</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<table align="center">
-							<tr>
-								<td><a href="img/thumbs/sdd.html" class="btn-block" target="_blank">Preview System</a></td>
-								<td><a href="erp_dss/index.html" class="btn-block" target="_blank">Explore Documentation</a></td>
-							</tr>
-						</table>
-						
-						
-					</div>
-				</div>
-			</article>
-			<!-- /PORTFOLIO ITEM -->
-			<!-- PORTFOLIO ITEM -->
-			<article class="portfolio-item col-2x" id="post-319">
-				<a class="pt-image venobox" href="#modal-319" data-type="inline" data-gall="portfolio" data-pt-title="ADECCO COLOMBIA"
-				 style="background-image: url(img/thumbs/thumb_adecco.jpg);">
-					<div class="pt-overinfo">
-						<h2>ADECCO COLOMBIA </h2>
-						<div class="partner">Pixelpro </div>
-					</div>
-				</a>
-				<div id="modal-319" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>ADECCO COLOMBIA </h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">El
-										<br>Reto</span>
-									<span class="txt-en">The
-										<br>Challenge</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Re diseñar y desarrollar el sitio web de la filial para Colombia de una de las temporales de
-									empleo mas grandes del
-									mundo tomando como punto de partida el manual de imagen de la marca. El reto era interesante y el peso del
-									cliente
-									exigía un trabajo duro para lograr los objetivos. En la agencia sabíamos que seria uno de nuestros trabajos
-									mas
-									importantes y así lo asumimos. </p>
-								<p class="txt-en">Re-design and develop the website of the subsidiary for Colombia of one of the largest
-									employment temporary in the
-									world (Adecco) taking as a starting point the brand guidelines. The challenge was interesting and the client's
-									weight
-									required hard work to achieve the goals. In the agency we knew it would be one of our most important jobs and
-									we
-									assume that.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li>
-											<a href="javascript:;">Custom CMS Development</a>
-										</li>
-										<li>
-											<a href="javascript:;">HTML - CSS - JavaScript</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Experience</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Interface</a>
-										</li>
-									</ul>
-								</div>
-								<img width="1805" height="1200" src="img/thumbs/thumb_adecco.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-								 alt="" />
-								<div class="with">
-									<h3>Working with:</h3>
-									<span class="partner">Pixelpro</span>
-									<span class="date">2016 - December</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">La
-										<br>Solución</span>
-									<span class="txt-en">The
-										<br>Answer</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Un sitio que cumple 100% con los lineamientos del manual de imagen de la marca, creado
-									especialemente para las necesidades
-									comunicativas del cliente e integrado completamente con la imagen global del negocio. El día que publicamos el
-									sitio
-									web celebré uno de los logros mas significativos de mi carrera como diseñador web. </p>
-								<p class="txt-en">A website 100% ruled by the guidelines of the brand image manual, created especially for the
-									client's communicative
-									needs and fully integrated with the overall brand of the business. The day we published the website I
-									celebrated
-									one of the most significant achievements of my career as a web designer.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<a href="http://www.adecco.com.co/" class="btn-block" target="_blank">visit the site</a>
-					</div>
-				</div>
-			</article>
-			<!-- /PORTFOLIO ITEM -->
-			<!-- PORTFOLIO ITEM -->
-			<article class="portfolio-item " id="post-288">
-				<a class="pt-image venobox" href="#modal-288" data-type="inline" data-gall="portfolio" data-pt-title="INTEEGRA"
-				 style="background-image: url(img/thumbs/thumb_inteegra.jpg);">
-					<div class="pt-overinfo">
-						<h2>INTEEGRA </h2>
-						<div class="partner">Inteegra </div>
-					</div>
-				</a>
-				<div id="modal-288" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>INTEEGRA </h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">El
-										<br>Reto</span>
-									<span class="txt-en">The
-										<br>Challenge</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Cuando un grupo de emprendedores te busca para construir la marca de una empresa de
-									telecomunicaciones desde cero
-									sabes que no sera tarea fácil, pero lo haces con gusto. Las premisas eran modernidad y simplicidad. En
-									principio
-									necesitaban todo lo relacionad al branding del negocio: Logo, membrete, tarjetas y por supuesto pagina web </p>
-								<p class="txt-en">When a group of entrepreneurs looks for you to build the brand of a telecommunications
-									company from scratch you know
-									that it will not be an easy task, but you do it with pleasure. The premises were modernity and simplicity. In
-									principle
-									they needed everything related to the branding of the business: logo, letterhead, cards and of course web
-									page.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li>
-											<a href="javascript:;">Brand Design</a>
-										</li>
-										<li>
-											<a href="javascript:;">HTML - CSS - JavaScript</a>
-										</li>
-										<li>
-											<a href="javascript:;">Project Managment</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Experience</a>
-										</li>
-									</ul>
-								</div>
-								<img width="4272" height="2848" src="img/thumbs/thumb_inteegra.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-								 alt="" />
-								<div class="with">
-									<h3>Working with:</h3>
-									<span class="partner">Inteegra</span>
-									<span class="date">2013 - August</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">La
-										<br>Solución</span>
-									<span class="txt-en">The
-										<br>Answer</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">2.5 años trabajando como diseñador In House de la empresa (aun hoy tengo la oportunidad de
-									trabajar con ellos ocasionalmente) se definen como un gran logro para mi. La marca ha sido afianzada en la
-									memoria de sus clientes y el respeto muto
-									por el trabajo de Tuux han sido base fundamental en la evolución de los dos conceptos.</p>
-								<p class="txt-en">2.5 years working as In House designer of the company (even today I have the opportunity to
-									work with them occasionally) are defined as a great achievement for me. The brand has been strengthened in the
-									memory of its customers and
-									the mutual respect for the work of Tuux have been fundamental base in the evolution of the two concepts.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<a href="http://inteegra.co/" class="btn-block" target="_blank">visit the site</a>
-					</div>
-				</div>
-			</article>
-			<!-- /PORTFOLIO ITEM -->
-			<!-- PORTFOLIO ITEM -->
-			<article class="portfolio-item " id="post-344">
-				<a class="pt-image venobox" href="#modal-344" data-type="inline" data-gall="portfolio" data-pt-title="Pueblo Caliente"
-				 style="background-image: url(img/thumbs/thumb_pc.jpg);">
-					<div class="pt-overinfo">
-						<h2>PUEBLO CALIENTE </h2>
-						<div class="partner">Tuux </div>
-					</div>
-				</a>
-				<div id="modal-344" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>PUEBLO CALIENTE </h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">El
-										<br>Reto</span>
-									<span class="txt-en">The
-										<br>Challenge</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">La reunión de varios artistas de diferentes disciplinas como músicos, djs, grafiteros,
-									fotógrafos y escritores y la necesidad de materializar las necesidades de cada uno de ellos en un solo lugar y
-									bajo una misma respuesta estética no es fácil. Un desafío en el que quise participar de inmediato y sin
-									pensarlo dos veces.</p>
-								<p class="txt-en">The meeting of several artists from different disciplines like musicians, DJs, graffiti
-									artists, photographers and writers and the requeriment to materialize the needs of each in one place and under
-									the same aesthetic response is not easy. A challenge in which I wanted to participate immediately and without
-									thinking twice.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li>
-											<a href="javascript:;">Custom CMS Development</a>
-										</li>
-										<li>
-											<a href="javascript:;">HTML - CSS - JavaScript</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Experience</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Interface</a>
-										</li>
-									</ul>
-								</div>
-								<img width="1536" height="1266" src="img/thumbs/thumb_pc.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-								 alt="" />
-								<div class="with">
-									<h3>Working with:</h3>
-									<span class="partner">Tuux</span>
-									<span class="date">2018 - June</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">La
-										<br>Solución</span>
-									<span class="txt-en">The
-										<br>Answer</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Los proyectos paralelos suelen ser la mejor forma de explorar nuestras necesidades creativas
-									propias. Este es el caso de "PUEBLO CALIENTE" un colectivo de artistas en el que tengo la oportunidad de
-									participar bajo el rol de lead web designer y músico ocasional. Buscamos trascender las barreras de la
-									comunicación web tradicional desarrollando un sitio diferente, impactante e innovador.</p>
-								<p class="txt-en">Side projects are usually the best way to explore our own creative needs. This is the case of
-									"PUEBLO CALIENTE" an artist's collective in which I have the opportunity to participate under the role of lead
-									web designer and occasional musician. We seek to transcend the limit of traditional web communication
-									developing a different, impactful and innovative site.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<a href="http://pueblocaliente.xyz" class="btn-block" target="_blank">visit the site</a>
-					</div>
-				</div>
-			</article>
-			<!-- /PORTFOLIO ITEM -->
-			<!-- PORTFOLIO ITEM -->
-			<article class="portfolio-item col-2x" id="post-321">
-				<a class="pt-image venobox" href="#modal-321" data-type="inline" data-gall="portfolio" data-pt-title="LAFAYETTE UNIFORME"
-				 style="background-image: url(img/thumbs/thumb_lafayette.jpg);">
-					<div class="pt-overinfo">
-						<h2>LAFAYETTE UNIFORME </h2>
-						<div class="partner">Pixelpro </div>
-					</div>
-				</a>
-				<div id="modal-321" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>LAFAYETTE UNIFORME </h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">El
-										<br>Reto</span>
-									<span class="txt-en">The
-										<br>Challenge</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Trabajando en una agencia te encuentras con retos bien interesantes. Por ejemplo migrar todo
-									un sitio web desde un
-									CMS desconocido a un WordPress completamente nuevo, sin tener ningún tipo de acceso a código fuente o
-									contenidos
-									y teniendo que realizar un trabajo transparente para el cliente y los usuarios. </p>
-								<p class="txt-en">Working in an agency you meet with very interesting challenges. For example, migrate an
-									entire website from an unknown
-									CMS to a completely new WordPress, without having any access to contents or source code and having to perform
-									a
-									transparent work for the client and users.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li>
-											<a href="javascript:;">Custom CMS Development</a>
-										</li>
-										<li>
-											<a href="javascript:;">HTML - CSS - JavaScript</a>
-										</li>
-									</ul>
-								</div>
-								<img width="1814" height="1210" src="img/thumbs/thumb_lafayette.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-								 alt="" />
-								<div class="with">
-									<h3>Working with:</h3>
-									<span class="partner">Pixelpro</span>
-									<span class="date">2016 - December</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">La
-										<br>Solución</span>
-									<span class="txt-en">The
-										<br>Answer</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">El ejercicio fue una labor extenuante teniendo que desarrollando un diseño bastante popular
-									entre la comunidad de
-									usuarios sobre una plataforma diferente para la cual fue creado, manteniendo exactamente la misma UX and UI
-									pero
-									ofreciendo las prestaciones y comodidades del CMS mas popular del mercado. Supongo que la mayor satisfacción
-									es
-									saber que prácticamente ningún usuario se dio cuenta del cambio entre el antiguo y el nuevo sitio web, lo que
-									era
-									nuestro principal objetivo. </p>
-								<p class="txt-en">The exercise was a strenuous task having to develop a design quite popular among the
-									community of users on a different
-									platform for which it was created, maintaining exactly the same UX and UI but offering the benefits and
-									amenities
-									of the most popular CMS on the market. I guess the biggest satisfaction is knowing that virtually no user
-									noticed
-									the change between the old and the new website, which was our main goal.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<a href="http://www.uniformelafayette.com/" class="btn-block" target="_blank">visit the site</a>
-					</div>
-				</div>
-			</article>
-			<!-- /PORTFOLIO ITEM -->
-			<!-- PORTFOLIO ITEM -->
-			<article class="portfolio-item col-2x" id="post-292">
-				<a class="pt-image venobox" href="#modal-292" data-type="inline" data-gall="portfolio" data-pt-title="UNICA" style="background-image: url(img/thumbs/thumb_unica.jpg);">
-					<div class="pt-overinfo">
-						<h2>UNICA </h2>
-						<div class="partner">Tropico2T</div>
-					</div>
-				</a>
-				<div id="modal-292" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>UNICA </h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">El
-										<br>Reto</span>
-									<span class="txt-en">The
-										<br>Challenge</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">El reto era importante; liderar el equipo que re diseñaría el portal web de una de las mas
-									importantes instituciones
-									de educación blingue de la ciudad. Se trataba de tomar un sitio web desarticulado y complejo para convertirlo
-									en
-									uno completamente nuevo, que cumpliera con los estándares actuales de diseño y funcionalidad teniendo como
-									pilares
-									fundamentales la correcta experiencia del usuario y el debido manejo de la información. </p>
-								<p class="txt-en">
-									The challenge was important; Lead the team that would design the webpage of one of the most important
-									institutions of bilingual
-									education of the city. It was a question of taking a disjointed and complex website to make it a completely
-									new
-									one, that complies with the current standards of design and functionality, having as fundamental pillars the
-									correct
-									user experience and the proper handling of the information.
-								</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li>
-											<a href="javascript:;">Project Managment</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Experience</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Interface</a>
-										</li>
-									</ul>
-								</div>
-								<img width="3177" height="1562" src="img/thumbs/thumb_unica.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-								 alt="" />
-								<div class="with">
-									<h3>Working with:</h3>
-									<span class="partner"></span>
-									<span class="date">2014 - December</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">La
-										<br>Solución</span>
-									<span class="txt-en">The
-										<br>Answer</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Cuando tu cliente confía en tu trabajo estas camino a convertirte en un buen diseñador, pero
-									si ademas se convierte
-									en tu amigo entonces has logrado que tu obra trascienda la barrera de lo netamente laboral para convertirse en
-									una
-									pieza que siempre recordaras (aun hoy tengo la oportunidad de trabajar con ellos ocasionalmente). </p>
-								<p class="txt-en">When your client trust on your work, you are going to become a good designer, but if you
-									become your friend then
-									you have succeeded in making your work transcend the barrier of the purely labor to become a piece that you
-									will
-									always remember (even today I have the Opportunity to work with them occasionally).</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<a href="http://www.unica.edu.co/" class="btn-block" target="_blank">visit the site</a>
-					</div>
-				</div>
-			</article>
-			<!-- /PORTFOLIO ITEM -->
-			<!-- PORTFOLIO ITEM -->
-			<article class="portfolio-item " id="post-308">
-				<a class="pt-image venobox" href="#modal-308" data-type="inline" data-gall="portfolio" data-pt-title="CONFECAMARAS"
-				 style="background-image: url(img/thumbs/thumb_confecamaras.jpg);">
-					<div class="pt-overinfo">
-						<h2>CONFECAMARAS </h2>
-						<div class="partner">Pixelpro </div>
-					</div>
-				</a>
-				<div id="modal-308" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>CONFECAMARAS </h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">El
-										<br>Reto</span>
-									<span class="txt-en">The
-										<br>Challenge</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Cuando trabajas como diseñador web en una agencia sabes que el trabajo sera pesado, pero que
-									tienes la oportunidad
-									de trabajar para grandes clientes. La confederación de cámaras de comercio mas grande de tu país puede ser uno
-									de
-									ellos y rediseñar la interfaz de su sitio web respetando sus cimientos fue una tarea muy interesante. </p>
-								<p class="txt-en">When you are a web designer in an agency you know that the work will be heavy, but that you
-									have the opportunity
-									to work for large clients. The confederation of your country's largest chambers of commerce can be one of them
-									and
-									designing the interface of their website was a very interesting task.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li>
-											<a href="javascript:;">User Interface</a>
-										</li>
-									</ul>
-								</div>
-								<img width="1555" height="1037" src="img/thumbs/thumb_confecamaras.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-								 alt="" />
-								<div class="with">
-									<h3>Working with:</h3>
-									<span class="partner">Pixelpro</span>
-									<span class="date">2016 - June</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">La
-										<br>Solución</span>
-									<span class="txt-en">The
-										<br>Answer</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Un diseño optimizado al momento actual pero que respeta la esencia de la marca y la
-									importancia de llegar a un amplio
-									margen de usuarios, desde importantes gerentes de negocios multinacionales hasta auxiliares administrativos.</p>
-								<p class="txt-en">A design optimized to the present days but respecting the essence of the brand and the
-									importance of reaching a wide
-									range of users, from important multinational business managers to administrative assistants.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<a href="http://www.confecamaras.org.co/" class="btn-block" target="_blank">visit the site</a>
-					</div>
-				</div>
-			</article>
-			<!-- /PORTFOLIO ITEM -->
-			<!-- PORTFOLIO ITEM -->
-			<article class="portfolio-item col-2x" id="post-315">
-				<a class="pt-image venobox" href="#modal-315" data-type="inline" data-gall="portfolio" data-pt-title="INSTITUTO DE ESTUDIOS URBANOS"
-				 style="background-image: url(img/thumbs/thumb_ieu.jpg);">
-					<div class="pt-overinfo">
-						<h2>INSTITUTO DE ESTUDIOS URBANOS </h2>
-						<div class="partner">Pixelpro </div>
-					</div>
-				</a>
-				<div id="modal-315" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>INSTITUTO DE ESTUDIOS URBANOS </h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">El
-										<br>Reto</span>
-									<span class="txt-en">The
-										<br>Challenge</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Trabajando con Pixelpro tube la oportunidad de trabajar para grandes clientes. El instituto
-									de estudio urbanos mas
-									grande de tu ciudad es uno de ellos. El volumen de información era bastante amplio por lo deberíamos buscar un
-									diseño
-									limpio y que reflejara la marca del instituto y desarrollarlo bajo estrictos estándares de funcionalidad. </p>
-								<p class="txt-en">When you are a web designer in an agency you know that the work will be heavy, but that you
-									have the opportunity
-									to work for heavy clients. The largest urban study institute in one of the most important Universities of the
-									country
-									is one of them. The volume of information was quite broad so we should look for a clean design and reflect the
-									brand
-									of the institute and develop it under strict standards of functionality.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li>
-											<a href="javascript:;">Custom CMS Development</a>
-										</li>
-										<li>
-											<a href="javascript:;">HTML - CSS - JavaScript</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Experience</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Interface</a>
-										</li>
-									</ul>
-								</div>
-								<img width="1368" height="912" src="img/thumbs/thumb_ieu.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-								 alt="" />
-								<div class="with">
-									<h3>Working with:</h3>
-									<span class="partner">Pixelpro</span>
-									<span class="date">2016 - August</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">La
-										<br>Solución</span>
-									<span class="txt-en">The
-										<br>Answer</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Primero un diseño visual en digital, luego convertirlo en HTML/CSS/JS para terminar
-									implementándolo en el CMS Joomla,
-									luego entregarlo al cliente para que pueda seguir alimentándolo sin problema. Al final la satisfacción de un
-									buen
-									trabajo realizado lo vale todo. </p>
-								<p class="txt-en">First a digital design, then convert it to HTML / CSS / JS to finish implementing it in the
-									Joomla CMS, then deliver
-									it to the client so you can continue to feed it without problem. In the end the satisfaction of a good job
-									done
-									is worth everything.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<a href="http://www.institutodeestudiosurbanos.info/" class="btn-block" target="_blank">visit the site</a>
-					</div>
-				</div>
-			</article>
-			<!-- /PORTFOLIO ITEM -->
-			<!-- PORTFOLIO ITEM -->
-			<article class="portfolio-item col-2x" id="post-302">
-				<a class="pt-image venobox" href="#modal-302" data-type="inline" data-gall="portfolio" data-pt-title="ASCOLBI"
-				 style="background-image: url(img/thumbs/thumb_ascolbi.jpg);">
-					<div class="pt-overinfo">
-						<h2>ASCOLBI </h2>
-						<div class="partner">Pixelpro </div>
-					</div>
-				</a>
-				<div id="modal-302" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>ASCOLBI </h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">El
-										<br>Reto</span>
-									<span class="txt-en">The
-										<br>Challenge</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Cuando trabajas como diseñador web en una agencia sabes que el trabajo sera pesado, pero que
-									tienes la oportunidad
-									de trabajar para grandes clientes. La comunidad de bibliotecologos mas grande de tu país puede ser uno de
-									ellos
-									y aunque no es fácil ganarse el corazón de un grupo tan selecto de profesionales, cuando tu trabajo es bueno,
-									terminas
-									por conseguirlo. </p>
-								<p class="txt-en">When you work as a web designer in an agency you know the job will be heavy, but you have the
-									opportunity to work
-									for heavy clients. The biggest library community in your country can be one of them and yet it is not easy to
-									win
-									the heart of such a select group of professionals, when your work is good, you end up getting it.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li>
-											<a href="javascript:;">Custom CMS Development</a>
-										</li>
-										<li>
-											<a href="javascript:;">HTML - CSS - JavaScript</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Experience</a>
-										</li>
-									</ul>
-								</div>
-								<img width="1532" height="1022" src="img/thumbs/thumb_ascolbi.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-								 alt="" />
-								<div class="with">
-									<h3>Working with:</h3>
-									<span class="partner">Pixelpro</span>
-									<span class="date">2016 - May</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">La
-										<br>Solución</span>
-									<span class="txt-en">The
-										<br>Answer</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">El desarrollo fue muy limpio, la validación de W3C fue superada sin problemas y el código de
-									la plantilla respeto
-									el diseño aprobado en cada pixel. El cliente recibió el sitio web que esperaba, completamente administrable en
-									el
-									CMS que dominaba. La satisfacción mas grande fue celebrar la llegada de un medio que servia para conectar una
-									comunidad
-									tan grande y organizada como Ascolbi. </p>
-								<p class="txt-en">The development was very clean, the validation of W3C was overcome without problems and the
-									code of the template
-									respect the design approved in each pixel. The client received the website that he hoped for, completely
-									manageable
-									in the CMS he used. The greatest satisfaction was to celebrate the arrival of a medium that served to connect
-									such
-									a large community and organized as Ascolbi.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<a href="http://ascolbi.org" class="btn-block" target="_blank">visit the site</a>
-					</div>
-				</div>
-			</article>
-			<!-- /PORTFOLIO ITEM -->
-			<!-- PORTFOLIO ITEM -->
-			<article class="portfolio-item " id="post-306">
-				<a class="pt-image venobox" href="#modal-306" data-type="inline" data-gall="portfolio" data-pt-title="SENEL" style="background-image: url(img/thumbs/thumb_senel.jpg);">
-					<div class="pt-overinfo">
-						<h2>SENEL </h2>
-						<div class="partner">Pixelpro </div>
-					</div>
-				</a>
-				<div id="modal-306" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>SENEL </h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">El
-										<br>Reto</span>
-									<span class="txt-en">The
-										<br>Challenge</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Cuando trabjas como diseñador web en una agencia sabes que el trabajo sera pesado, pero que
-									tienes la oportunidad
-									de trabajar para grandes clientes. El mayor distribuidor de partes y dispositivos electrónicos de la tu ciudad
-									pude
-									ser uno de ellos y las premisas estaban claras, un catalogo extenso que debía ser prioridad y difundir los
-									detalles
-									de producto como objetivo final. </p>
-								<p class="txt-en">When you are a web designer in an agency you know that the work will be heavy, but that you
-									have the opportunity
-									to work for large clients. The biggest distributor of parts and electronic devices in your city could be one
-									of
-									them and the premises were clear, an extensive catalog that should be prioritized and disseminate the product
-									details
-									as a final goal.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li>
-											<a href="javascript:;">Custom CMS Development</a>
-										</li>
-										<li>
-											<a href="javascript:;">HTML - CSS - JavaScript</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Experience</a>
-										</li>
-										<li>
-											<a href="javascript:;">User Interface</a>
-										</li>
-									</ul>
-								</div>
-								<img width="1280" height="853" src="img/thumbs/thumb_senel.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-								 alt="" />
-								<div class="with">
-									<h3>Working with:</h3>
-									<span class="partner">Pixelpro</span>
-									<span class="date">2013 - May</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">
-									<span class="txt-es">La
-										<br>Solución</span>
-									<span class="txt-en">The
-										<br>Answer</span>
-								</h3>
-							</div>
-							<div class="col-md-6">
-								<p class="txt-es">Desarrollado bajo el amparo del Joomla el proceso era difícil ya que se debía actualizar
-									desde una versión obsoleta
-									del CMS respetando toda la base de datos del sitio. Una vez se pudo actualizar toda la estructura del sitio a
-									versiones
-									recientes el paso a seguir era ejecutar el rediseño del antiguo sitio. El aumento de las conversiones vivitas
-									/
-									ventas son indicador de que hicimos el trabajo bien. </p>
-								<p class="txt-en">Developed under the rules of Joomla the process was difficult since it had to be updated from
-									an obsolete version
-									of the CMS respecting all the database of the site. Once it was possible to update the entire structure of the
-									site
-									to a recent versions, the next step was to execute the redesign of the old site. The increase in live / sales
-									conversions
-									are indicative that we did the job well.</p>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<a href="http://www.electronicasenel.com/es/" class="btn-block" target="_blank">visit the site</a>
-					</div>
-				</div>
-			</article>
-			<!-- /PORTFOLIO ITEM -->
-		</div>
-	</section>
+							<p>For +2 years I was part of the team that took on the challenge and designed the required solutions.
+							</p>
 
-	<section class="tx-sec" id="passion">
-		<div class="tblr-box">
-			<h3 class="tblr-box_headline txt-en">DOER
-				<span class="font-theme">[passion]</span>
-			</h3>
-			<h3 class="tblr-box_headline txt-es">DOER
-				<span class="font-theme">[pasión]</span>
-			</h3>
-			<div class="tblr-box_content">
-				<table class="techne-wrp" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-						<tr>
-							<td class="episteme-wrp">
-								<h3>Episteme</h3>
-								<div class="pasion-txt-wrp">
-									<div class="txt-es">
-										<p>
-											Recuerdo el mundo sin computadoras ni redes sociales, pero tambien formé parte de la revolución de internet,
-											por lo que cada vez más quería ser un rompedor de reglas.
-										</p>
-										<p>
-											Ahora soy ciclista urbano, productor aficionado de música electrónica. Un soñador minimalista y diseñador
-											idealista que cree en el diseño más que como un trabajo para insertar píxeles en una pantalla como una forma
-											de vida para transformar el mundo.
-										</p>
-										<p>
-											Me encanta diseñar interfaces pero tambien hago muchas otras cosas.
-										</p>
-									</div>
+							<p class="pb3"> Initially I joined the team as a UX Designer in charge of carrying out the user research
+								and
+								interaction design, but over the months my position was aligned with the design of interfaces and even
+								the
+								HTML / CSS / JS Front-end as well.</p>
 
-									<div class="txt-en">
-										<p>
-											I remember the world without computers and social network but made part of the internet revolution so I grow
-											wanted to be a ruler breaker.
-										</p>
-										<p>
-											Now I'm an urban bicycle rider, amateur electronic music producer and idealist designer that belive in
-											design more than a job to push pixels in a screen as a way of life to transform the world.
-										</p>
-										<p>
-											I love to create interfaces and experiences but I do many others things too.
-										</p>
-									</div>
-								</div>
-							</td>
-							<td class="stats-wrp">
-								<h3>Techne</h3>
-
-								<div class="txt-en">
-									<p>I have different skills and I decide
-										which one to use depending on the
-										needs of each project. I use new
-										technologies, tools and my knowledge
-										to give life to visual designs and use research techniques and information analysis to design human
-										experiences. I know how to use code to design too.</p>
-								</div>
-
-								<div class="txt-es">
-									<p>Tengo habilidades diferentes y decido
-										cual usar dependiendo de las
-										Necesidades de cada proyecto. Uso nuevas
-										tecnologías, herramientas y mi conocimiento
-										para dar vida a diseños visuales y utilizo técnicas de investigación y análisis de información para diseñar
-										experiencias humanas. Sé cómo usar el código para diseñar también.</p>
-								</div>
-
-								<div class="charts ">
-									<div class="chart">
-										<div class="percent" style="width:95%" data-sk-val="90%">
-											<i class="fa fa-object-group"></i>
-											<span class="txt-es">interface de usuario</span>
-											<span class="txt-en">USER INTERFACE</span>
-										</div>
-									</div>
-									<div class="chart">
-										<div class="percent" style="width:83%" data-sk-val="85%">
-											<i class="fa fa-crop"></i>
-											<span class="txt-es">experiencia de usuario</span>
-											<span class="txt-en">USER EXPERIENCE</span>
-										</div>
-									</div>
-									<div class="chart">
-										<div class="percent" style="width:80%" data-sk-val="80%">
-											<i class="fa fa-pencil"></i>
-											<span class="txt-es">Diseño visual</span>
-											<span class="txt-en">Visual Design</span>
-										</div>
-									</div>
-									<div class="chart">
-										<div class="percent" style="width:95%" data-sk-val="88%">
-											<i class="fa fa-html5"></i>
-											<span>HTML / SASS / JS</span>
-										</div>
-									</div>
-
-									<div class="chart">
-										<div class="percent" style="width:74%" data-sk-val="72%">
-											<i class="fa fa-sliders"></i>
-											<span>Audio / Video</span>
-										</div>
-									</div>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<div class="tech-footer txt-en">
-					<h3 style="display:inline">KEYWORDS</h3> analysis, communication, creativity, agile, bicycles, teamwork, code,
-					empathy, cyberpunk, frameworks,
-					music, product, typography, family, emotions, poker, architecture, photography, movies, color, challenges,
-					psychology,
-					architecture, sports, forest horses and houses, passion and love...
-				</div>
-				<div class="tech-footer txt-es">
-					<h3 style="display:inline">Palabras Claves</h3> Análisis, comunicación, creatividad, scrumb, bicicletas, trabajo
-					en equipo, código, empatía, cyberpunk,
-					frameworks, música, producto, tipografía, familia, emociones, póker, color, desafíos, psicología, arquitectura,
-					deportes,
-					caballos y casas forestales, pasión y amor...
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="tx-sec" id="touch">
-		<div class="plx-header">
-			<div class="header-bg bg-touch"></div>
-			<div class="contact-wrp">
-				<a href="mailto:daniel@tuux.co" class="emailbox" style="background: transparent">
-					<img src="img/avatar_round.png">
-					<!--<i class="fa fa-envelope"></i>-->
-					<h3 class="txt-en">DESIGNER
-						<b class="font-theme">[GET IN TUUX]</b>
-					</h3>
-					<h3 class="txt-es">DISEÑADOR
-						<b class="font-theme">[CONTACTO]</b>
-					</h3>
-					<span>daniel@tuux.co</span> Bogotá, Colombia
-				</a>
-				<ul>
-					<li>
-						<a href="https://www.behance.net/tuux" target="_blank">
-							<i class="fa fa-behance-square"></i>
+							<a class="fancy toggle-case" href="javascript:;">READ MORE</a>
+						</div>
+					</div>
+					<div class="col_box more-works">
+						<a class="bb8 bt8 p3 flex-hcenter flex-space-b" href="">
+							<ul>
+								<li>SoftwareOne</li>
+								<li><small>MY POSITION: UX / UI / Front-end</small> </li>
+							</ul>
+							<i class="fa fa-external-link"></i>
 						</a>
-					</li>
-					<li>
-						<a href="https://co.linkedin.com/in/daniel-trejos-360302ab" target="_blank">
-							<i class="fa fa-linkedin-square"></i>
+						<a class="bb8 p3 flex-hcenter flex-space-b" href="">
+							<ul>
+								<li>Adecco Colombia</li>
+								<li><small>MY POSITION: UX / UI / Front-end</small></li>
+							</ul>
+							<i class="fa fa-external-link"></i>
 						</a>
-					</li>
-					<li>
-						<a href="https://github.com/tuuxdev" target="_blank">
-							<i class="fa fa-github-square"></i>
+						<a class="bb8 p3 flex-hcenter flex-space-b" href="">
+							<ul>
+								<li>ÚNICA</li>
+								<li><small>MY POSITION: UX / PM</small> </li>
+							</ul>
+							<i class="fa fa-external-link"></i>
 						</a>
-					</li>
-					<li>
-						<a href="https://soundcloud.com/totalinspector" target="_blank">
-							<i class="fa fa-plus-square"></i>
+						<a class=" p3 flex-hcenter flex-space-b" href="">
+							<ul>
+								<li>PUEBLO CALIENTE</li>
+								<li><small>MY POSITION: UX / UI / Front-end</small> </li>
+							</ul>
+							<i class="fa fa-external-link"></i>
 						</a>
-					</li>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-center font05 mt2"> <i>Just a brutal vision of me ♥︎</i></div>
+	</main>
+
+	<div class="case-study">
+		<a class="close-case toggle-case" href="javascript:;"><i class="fa fa-times"></i></a>
+		<div class="frame">
+			<div class="article-text">
+				<h2 class="mt6 mb6">Grupo Sancho Case Study</h2>
+
+				<div class="row case-2-cols">
+					<div class="pr3">
+						<h3>The company</h3>
+						<p> The largest advertising and marketing holding in Colombia and one of the largest in the world. It has
+							more
+							than 1000 employees in around 8 agencies present in the business of creativity and media management
+							throughout
+							the country.</p>
+					</div>
+
+					<div lass="pl3">
+						<h3>The challenge</h3>
+						<p> Be part of the technology team responsible for designing and developing a unified software solution in
+							which
+							all the functionalities required by the company at an operational, administrative and financial level
+							(ERP)
+							will be grouped.</p>
+					</div>
+				</div>
+
+				<h3> Goals</h3>
+				<p> When I joined the team, the first thing I did was a socialization process with stakeholders about the
+					objectives of the project in the near, medium and long term, in which the need to unify the software tools
+					used at that moment by the different areas of the company in a single software across the entire organization
+					(ERP) as the main objective to achieve, taking in mind that in the long term the idea of being able to market
+					the software in other organizations and countries could be a real possibility.</p>
+
+				<p> Having defined the main objective, I was able to determine that the understanding of the business would be
+					fundamental to the creation process as well as the definition of the pain points and needs of the users with
+					respect to the software they used at that time.</p>
+
+				<p> Once defined the requirements of the users and with the knowledge of the assimilated business could begin a
+					face of more solid creation.</p>
+
+				<h3> First Research</h3>
+
+				<p> For the understanding of the business several sessions of interviews with who was my direct manager (Someone
+					with more than 10 years of experience working in the organization) were of great value. I have taught myself
+					to understand how the business of each of the agencies worked and the software needs that had been determined
+					during those years should be met. At the same time several interviews with users and some surveys gave us the
+					expected results on the perception of users. Low application performance, complicated flows and a confusing
+					information architecture were several of the painful points that we managed to determine.</p>
+
+				<p> During this phase we started to raise information about the new requirements that were not covered in the
+					current applications.</p>
+
+				<h3>Synthesis and hypothesis</h3>
+
+				<p> With the information gathered in the face of research, I began to create different artifacts that allow the
+					team to visualize the findings. The creation of a user Person with well-defined pain points was the first task
+					fulfilled. With a site Map of the first face of the product and a User Flow of the first functionality of that
+					face we began to create the wireframes of each screen to complete an interactive prototype that was the result
+					that we validated with users and stakeholders to make adjustments and then move on to development.</p>
+
+				<p> The process was well received by all parties and allowed to improve the perceived quality of the delivered
+					product, so we decided to iterate on these same steps for the design and development of the following
+					functionalities.</p>
+
+				<h3>Need for the design system</h3>
+
+				<p> As we were going through the design process and the app functionalities increased, we began to identify a
+					series of inconsistencies in the interface that were generating evident usability problems. The developers
+					were writing a non recursive code and the final product on many occasions distanced strongly from the defined
+					design generating inconsistency of use, so we decided to create a design system for the ERP that was a common
+					language and a unique source of truth for designers and developers.</p>
+
+				<p> We start by creating an inventory of all the existing components in the application until then, then
+					categorize them into atoms, molecules, components and layouts. We made a checklist of colors and typographies
+					and we also identify the context of use of each part of the system.</p>
+
+				<p> Once we had the inventory we started creating the libraries for the design team in such a way that each
+					member could design the mockups and prototypes in coherence with the rest of the team and the application.
+					With the defined libraries, the same components were materialized in HTML / CSS / JS code so that when passing
+					the prototypes to development, the team will have exactly the same components available for its real and
+					functional implementation.</p>
+
+				<p> Finally this part of the project culminated with the documentation of the entire system and the disclosure
+					of the manual throughout the team.</p>
+
+				<h3> Result</h3>
+
+				<p> My time in the Group was two years of continuous growth. The users perceived a big change between the past
+					applications and the new ERP. The productivity of the company had a palpable increase and we know that part of
+					the fault was the software we designed, although it was never a fully finished product due to its continuous
+					growth and new requirements, it always allowed us to interact with the users and have the opportunity to
+					improve in each release.</p>
+
+				<ul class="mt6 mb6">
+					<li><a href="img/sdd.html" target="_blank">Preview System</a></li>
+					<li><a href="erp_dss/index.html" target="_blank">Explore Documentation</a></li>
 				</ul>
 			</div>
 		</div>
-	</section>
+	</div>
 
-	<a href="mailto:daniel@tuux.co" class="btn-next">daniel@tuux.co</a>
-
-	<script src="js/plugins/modernizr.js"></script>
-	<script src="js/plugins/venobox.js"></script>
-	<script src="js/plugins/scrollreveal.min.js"></script>
-	<script src="js/app.min.js"></script>
-	<script>
-		var $changer2 = $("#changeText2"),
-			i2 = 0,
-			speed = 200,
-			words2 = new Array;
-		words2[0] = "thinker", words2[1] = "mover", words2[2] = "doer", words2[3] = "designer", window.setInterval(function () {
-			$changer2.fadeOut(speed, function () {
-				$changer2.text(words[++i2 % words2.length]), $changer2.fadeIn(speed)
-			})
-		}, 3500);
-	</script>
-
-	<script>
-		$(".reveal-charts").click(function () {
-			$(".charts").toggleClass("hidden");
-		});
-	</script>
+	<script src="js/plugins.min.js"></script>
 </body>
 
 </html>
