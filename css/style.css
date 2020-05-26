@@ -2832,20 +2832,31 @@ body::-webkit-scrollbar-thumb {
 }
 
 .blog h1 {
-  max-width: 500px;
+  max-width: 550px;
   text-align: center;
   margin: 0 auto;
+}
+
+.blog h3 {
+  font-size: 1.5em;
+  margin-top: 2.5em;
 }
 
 .blog .meta {
   font-size: .8rem;
   text-align: center;
-  margin-bottom: 60px;
+  margin: 20px 0px 60px;
 }
 
 .blog main {
   max-width: 890px;
   margin: 60px auto;
+}
+
+.blog a {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .vbox-inline {
@@ -3025,7 +3036,9 @@ td.stats-wrp h1 {
     border-left: 2px solid #f1c40f;
   }
 
-  ;
+  .blog {
+    padding: 0px 16px;
+  }
 }
 
 .contact-wrp {
