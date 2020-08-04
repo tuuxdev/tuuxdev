@@ -2865,7 +2865,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .vbox-container img {
-  max-width: 700px;
+  max-width: 700px !important;
 }
 
 body.vbox-open .vbox-overlay {
@@ -2982,8 +2982,6 @@ td.stats-wrp h1 {
   padding: 5%;
   border: 2px solid #f1c40f;
 }
-
-
 
 .contact-wrp {
   display: -ms-flexbox;
@@ -3187,5 +3185,11 @@ td.stats-wrp h1 {
 
   ;
 }
+
+.vbox-container .full-img,
+.full-img {
+  max-width: 100% !important;
+}
+
 
 /*# sourceMappingURL=style.css.map */
