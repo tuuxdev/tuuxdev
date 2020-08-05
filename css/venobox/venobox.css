@@ -259,15 +259,17 @@
 	box-sizing: content-box;
 	cursor: pointer;
 	position: fixed;
-	top: 50%;
+	top:50%;
 	color: #fff;
-	width: 30px;
-	height: 170px;
-	margin-top: -85px;
+	width: 40px;
+	height: 45px;
+	/* margin-top: -85px; */
 	text-indent: -100px;
 	border: solid transparent;
 	/* Using border instead of padding to keep bg image in place */
 	overflow: hidden;
+	background-color: black !important;
+	border-width: 0 !important;
 }
 
 .vbox-prev {
