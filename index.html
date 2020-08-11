@@ -7,14 +7,15 @@
 	<title>Tuux - Designer</title>
 	<meta name="description" content="Tuux - Designer">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/venobox/venobox.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/venobox.min.css">
+	<link rel="stylesheet" href="css/style.v2021.0.css">
 	<link rel="icon" type="image/png" href="favicon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 	<style>
 		.preloader {
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
+			justify-content: center;
 			position: fixed;
 			text-align: center;
 			left: 0;
@@ -22,20 +23,15 @@
 			width: 100%;
 			height: 100%;
 			z-index: 7777777;
-			background: #fff
+			background: #111111;
 		}
 
 		.preloader .loader {
-			margin: 0 0 2em;
-			height: 40px;
-			width: 40px;
-			text-align: center;
-			padding: 1em;
-			margin: 0 auto 1em;
-			display: inline-block;
-			vertical-align: top;
-			background: url(../img/rolling.svg) no-repeat center;
-			background-size: cover
+			height: 64px;
+			width: 64px;
+			margin-top: 32px;
+			background: url('img/infinity.gif') no-repeat center;
+			background-size: cover;
 		}
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -62,103 +58,146 @@
 					overflow: 'auto'
 				});
 			}
-
 			$(".preloader").fadeOut(1200);
 		};
 	</script>
 </head>
 
 <body class="en">
-	<div class="preloader">
-		<div class="loader" title="2"></div>
-	</div>
-	<div class="wellcome-language">
-		<a href="javascript:;" class="wellcome-langswitch wellcome-es_ES">español</a>
-		<a href="javascript:;" class="wellcome-langswitch wellcome-en_EN">english</a>
-	</div>
-	<header class="cd-auto-hide-header">
-		<div class="logo"><a href="#0">TUUX</a></div>
-		<nav class="cd-primary-nav"><a href="#cd-navigation" class="nav-trigger"><span><em aria-hidden="true"></em></span></a>
-			<ul class="main-nav" id="cd-navigation">
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#process">THINKER</a></li>
-				<li><a href="#portfolio">MOVER</a></li>
-				<li><a href="#passion">DOER</a></li>
-				<li><a href="#touch">DESIGNER</a></li>
-				<li><a href="javascript:;" class="langswitch en_EN">en</a></li>
-				<li><a href="javascript:;" class="langswitch es_ES">es</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section id="about">
-		<div class="plx-header">
-			<div class="header-bg bg-about"></div>
-			<div class="title scroll-move txt-en">
-				<h1>I'm a <strong id="changeText1">thinker</strong><br>focused on turn<br>idead into substance <span class="sub-headline">I believe in design as the process to find and solve human needs and achieve business goals, giving life to functional, useful, beautiful and adaptable products.</span></h1>
-				<div><a class="fancylink" href="#process">HOW I WORK</a></div>
-			</div>
-			<div class="title scroll-move txt-es">
-				<h1 class="mn-head-home">Soy un <strong id="changeText2">diseñador</strong><br>enfocado en convertir<br>ideas en substancia <span class="sub-headline">Creo en el diseño como el proceso para encontrar y resolver necesidades humanas y alcanzar objetivos de negocio dando vida a productos funcionales, útiles, adaptables y agradables.</span></h1>
-				<div><a class="fancylink" href="#process">Mi Proceso</a></div>
-			</div>
+	<main>
+		<div class="preloader">
+			<div class="loader"></div>
 		</div>
-	</section>
-	<section id="process">
-		<div class="tblr-box">
-			<h3 class="tblr-box_headline txt-en">thinker <span class="font-theme">[process]</span></h3>
-			<h3 class="tblr-box_headline txt-es">thinker <span class="font-theme">[proceso]</span></h3>
-			<div class="tblr-box_content">
-				<div class="process-flow">
-					<div class="process-flow_item txt-en">RESEARCH<div>By means of different methods I make an immersion to understand the problem, the needs of the users and the objectives of the business.</div>
+		<div class="wellcome-language d-flex">
+			<a href="javascript:;" class="wellcome-langswitch wellcome-es_ES">español</a>
+			<div class="point">●</div>
+			<a href="javascript:;" class="wellcome-langswitch wellcome-en_EN">english</a>
+		</div>
+		<header id="hero" class="hero section-padding">
+			<div class="hero_bg"></div>
+			<div class="hero_logo">TUUX</div>
+			<nav class="hero_nav text-right">
+				<a href="javascript:;" class="langswitch en_EN">EN</a>
+				<a href="javascript:;" class="langswitch es_ES">ES</a>
+			</nav>
+			<div class="hero_headline scroll-move">
+				<h1 class="txt-es">Soy un <span>diseñador</span> <br>enfocado en convertir <br>ideas en substancia</h1>
+				<h1 class="txt-en">I'm a <span>designer</span> <br>focused on turn ideas <br>into substance</h1>
+				<div class="fancy-divider"></div>
+				<p class="txt-es">Creo en el diseño como el proceso para encontrar y resolver necesidades humanas y alcanzar objetivos de negocio dando vida a productos funcionales, útiles, adaptables y agradables.</p>
+				<p class="txt-en">I believe in design as the process to find and solve human needs and achieve business goals, giving life to functional, useful, beautiful and adaptable products.</p>
+			</div>
+			<div class="hero_footer text-right">
+				<div class="d-flex space-between align-bottom">
+					<a class="fancy-link down to-anchor" href="#process" data-icon="">
+						<span class="txt-es">Conoce más</span>
+						<span class="txt-en">Discover more</span>
+					</a>
+					<ul class="social_links">
+						<li><a href="mailto:daniel@tuux.com"><i class="fa fa-envelope"></i> Email</a></li>
+						<li><a href="https://co.linkedin.com/in/dtuux" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+						<li><a href="https://www.behance.net/tuux" target="_blank"><i class="fa fa-behance-square"></i> Behance</a></li>
+						<li><a href="https://github.com/tuuxdev" target="_blank"><i class="fa fa-github-square"></i> GitHub</a></li>
+						<li><a href="https://kubeats.bandcamp.com" target="_blank"><i class="fa fa-bandcamp"></i> Bandcamp</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section id="process" class="section section-padding">
+			<div class="section_hedaline">
+				<h2 class="txt-es">PROCESO</h2>
+				<h2 class="txt-en">PROCESS</h2>
+				<div class="fancy-divider"></div>
+			</div>
+			<div class="section_content">
+				<div class="process-flow d-flex">
+					<div class="process-flow_item txt-en">
+						<h2>understand</h2>
+						<div>By means of different methods I make an immersion to understand the problem, the needs of the users and the objectives of the business.</div>
 					</div>
-					<div class="process-flow_item txt-en">IDEATE<div>With the findings I materialize different artifacts and prototypes that allow to visualize and define the possible solutions to the problem and the needs.</div>
+					<div class="process-flow_item txt-en">
+						<h2>ideate</h2>
+						<div>With the findings I materialize different artifacts and prototypes that allow to visualize and define the possible solutions to the problem and the needs.</div>
 					</div>
-					<div class="process-flow_item txt-en">TEST<div>By observing the users' behavior when interacting with the designed artifacts I validate the hypotheses and improve the product in its weak points.</div>
+					<div class="process-flow_item txt-en">
+						<h2>test</h2>
+						<div>By observing the users' behavior when interacting with the designed artifacts I validate the hypotheses and improve the product in its weak points.</div>
 					</div>
-					<div class="process-flow_item txt-en">ITERATE<div>I collect information on user behavior with the published product that serves as a starting point for the design of new experiences.</div>
+					<div class="process-flow_item txt-en">
+						<h2>learn</h2>
+						<div>Collect information and data about the published product that serves as a starting point for the design of new experiences.</div>
 					</div>
-					<div class="process-flow_item txt-es">INVESTIGAR<div>Por medio de diferentes métodos realizo una inmersión para entender el problema, las necesidades de los usuarios y los objetivos del negocio.</div>
+					<div class="process-flow_item txt-es">
+						<h2>entender</h2>
+						<div>Por medio de diferentes métodos realizo una inmersión para entender el problema, las necesidades de los usuarios y los objetivos del negocio.</div>
 					</div>
-					<div class="process-flow_item txt-es">IDEAR<div>Con los hallazgos encontrados materializo diferentes artefactos y prototipos que permitan visualizar y definir las posibles soluciones al problema y las necesidades.</div>
+					<div class="process-flow_item txt-es">
+						<h2>idear</h2>
+						<div>Con los hallazgos encontrados materializo diferentes artefactos y prototipos que permitan visualizar y definir las posibles soluciones al problema y las necesidades.</div>
 					</div>
-					<div class="process-flow_item txt-es">PROBAR<div>Observando el comportamiento de los usuarios al interactuar con los artefactos diseñados valido las hipótesis y perfecciono el producto en sus puntos débiles.</div>
+					<div class="process-flow_item txt-es">
+						<h2>probar</h2>
+						<div>Observando el comportamiento de los usuarios al interactuar con los artefactos diseñados valido las hipótesis y perfecciono el producto en sus puntos débiles.</div>
 					</div>
-					<div class="process-flow_item txt-es">ITERAR<div>Recolecto información sobre el comportamiento de los usuarios con el producto publicado que me sirve como punto de partida para el diseño de nuevas experiencias.</div>
+					<div class="process-flow_item txt-es">
+						<h2>aprender</h2>
+						<div>Recolecto información y datos del producto publicado que me sirve como punto de partida para el diseño de nuevas experiencias.</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section id="portfolio">
-		<div id="portfolio-headline" class="bg-theme padding-s">
-			<div>
-				<h3 class="font-black txt-en">MOVER <span class="font-white">[CAREER]</span></h3>
-				<h3 class="font-black txt-es">MOVER <span class="font-white">[PORTAFOLIO]</span></h3>
+		</section>
+		<section id="cases" class="section section-padding">
+			<div class="section_hedaline">
+				<h2 class="txt-en">CASES</h2>
+				<h2 class="txt-es">CASOS</h2>
+				<div class="fancy-divider"></div>
 			</div>
-		</div>
-		<div class="pt-tuux">
-			<article class="portfolio-item col-2x" id="post-tccc">
-				<a class="pt-image venobox" href="#modal-tccc" data-type="inline" data-gall="portfolio" data-pt-title="SOFTWAREONE LATAM" style="background-image:url(img/thumbs/thumb_case_ko.jpg)">
-					<div class="pt-overinfo">
-						<h2 class="txt-en">UX for a The Coca-Cola Company' minimum viable product</h2>
-						<h2 class="txt-es">UX de un Producto Mínimo Viable para The Coca-Cola Company</h2>
-						<div class="partner">MJV Technology and Innovation</div>
-						<div class="case-label"><span class="case-tag"><i class="fa fa-tag"></i> Case Study</span></div>
+			<div class="section_content">
+				<div class="case d-flex">
+					<div class=" case_thumb parallax_fx" data-rellax-speed="1" data-rellax-percentage="0.5">
+						<img src="img/thumbs/thumb_case_ko.jpg" alt="tuux">
 					</div>
-				</a>
-				<div id="modal-tccc" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3">
-								<h2 class="txt-en">UX for a The Coca-Cola Company' minimum viable product</h2>
-								<h2 class="txt-es">UX de un Producto Mínimo Viable para The Coca-Cola Company</h2>
-							</div>
+					<div class="case_description">
+						<h2 class="txt-en">UX of an e-commerce for The Coca-Cola Company</h2>
+						<h2 class="txt-es">UX de un comercio electrónico para Coca-Cola Company</h2>
+						<div class="txt-en">
+							<p>Build an MVP is the most fast and safe way to test a hypothesis in a big company, especially if your idea implies to take some risks in your way of work, think and win.</p>
+							<p>I made part of an Agile squad (UI and Strategic Designers and Full Stack Developers) as a UX designer commissioned of understand the users, business and stakeholders needs and translate my findings into a useful product that would allow us verify our idea about a business opportunity.</p>
 						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>Intro</span></h3>
+						<div class="txt-es">
+							<p>Construir un MVP es la forma más rápida y segura de probar una hipótesis en una gran empresa, especialmente si su idea implica tomar algunos riesgos en su forma de trabajar, pensar y ganar.</p>
+							<p>Hice parte de un escuadrón Agil (Diseñadores de estratégia y UI, Desarrolladores Full Stack y QA Tester) como Diseñador de UX encargado de comprender las necesidades de los usuarios y el negocio y traducir mis hallazgos en un producto útil que nos permitiría verificar nuestra idea sobre una oportunidad de negocio.</p>
+						</div>
+						<a class="fancy-link read-more venobox" href="#modal-tccc" data-icon="" data-vbtype="inline" data-gall="cases" data-title="UX for a Coca-Cola Company' e-commerce">
+							<span class="txt-es">Conoce más</span>
+							<span class="txt-en">Read more</span>
+						</a>
+					</div>
+					<div id="modal-tccc" style="display:none">
+						<div class="case-item d-flex">
+							<div class="case-item_info">
+								<div>
+									<h2 class="txt-en">Business</h2>
+									<h2 class="txt-es">Negocio</h2>
+									<div>The Coca-Cola Company</div>
+								</div>
+								<div>
+									<h2 class="txt-en">My Work</h2>
+									<h2 class="txt-es">Mi Trabajo</h2>
+									<div>Research, UX, Interaction Design</div>
+								</div>
+								<div>
+									<h2 class="txt-en">Agency</h2>
+									<h2 class="txt-es">Agencia</h2>
+									<div>MJV Technbology & Innovation</div>
+								</div>
+								<div>
+									<h2 class="txt-en">Date</h2>
+									<h2 class="txt-es">Fecha</h2>
+									<div>07/2019</div>
+								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="case-item_content">
 								<div class="txt-en">
 									<p>Build an MVP is the most fast and safe way to test a hypothesis in a big company, especially if your idea implies to take some risks in your way of work, think and win.</p>
 									<p>I made part of an Agile squad (UI and Strategic Designers and Full Stack Developers) as a UX designer commissioned of understand the users, business and stakeholders needs and translate my findings into a useful product that would allow us verify our idea about a business opportunity.</p>
@@ -167,67 +206,22 @@
 									<p>Construir un MVP es la forma más rápida y segura de probar una hipótesis en una gran empresa, especialmente si su idea implica tomar algunos riesgos en su forma de trabajar, pensar y ganar.</p>
 									<p>Hice parte de un escuadrón Agil (Diseñadores de estratégia y UI, Desarrolladores Full Stack y QA Tester) como Diseñador de UX encargado de comprender las necesidades de los usuarios y el negocio y traducir mis hallazgos en un producto útil que nos permitiría verificar nuestra idea sobre una oportunidad de negocio.</p>
 								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li><a>Research</a></li>
-										<li><a>User Experience</a></li>
-										<li><a>Interaction Design</a></li>
-									</ul>
-								</div><img src="img/thumbs/thumb_case_ko.jpg" class="wp_img" alt="">
-								<div class="with">
-									<h3>Working with:</h3><span class="partner">MJV Technology and Innovation</span> <span class="date">2019 - PRESENT</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>The<br>Company</span></h3>
-							</div>
-							<div class="col-md-6">
+								<img src="img/thumbs/thumb_case_ko.jpg" class="case-item_img" alt="tuux">
+								<h3 class="txt-en">The Business, challenge and goals</h3>
+								<h3 class="txt-es">El Negocio, reto y objetivos</h3>
 								<div class="txt-en">
 									<p>One of the biggest drink manufacturer in Colombia and in the world with millions of consumers and presence all around the world.</p>
-								</div>
-								<div class="txt-es">
-									<p style="margin-top:0">Uno de los mayores fabricantes de bebidas en Colombia y el mundo con millones de consumidores y presencia en todo el pais.</p>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>The<br>challenge</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div class="txt-en">
 									<p>Understand the company requirements, constrains and hypothesis and verify if people need and want what stakeholders assume they need and want.</p>
-								</div>
-								<div class="txt-es">
-									<p>Comprender los requeriemintos, las limitaciones y la hipótesis de la empresa y verificar si la gente necesita y quiere lo que los interesados asumen que necesitan y quieren</p>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>The<br>goals</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div class="txt-en">
 									<p>Build a responsive web app that allowed us to collect enough data that serveded the company to decide if there exists a real opportunity to gave people a useful service to them.</p>
 								</div>
 								<div class="txt-es">
+									<p style="margin-top:0">Uno de los mayores fabricantes de bebidas en Colombia y el mundo con millones de consumidores y presencia en todo el pais.</p>
+									<p>Comprender los requeriemintos, las limitaciones y la hipótesis de la empresa y verificar si la gente necesita y quiere lo que los interesados asumen que necesitan y quieren</p>
 									<p>Construir una aplicación web responsive que nos permitiera recoger suficientes datos que sirvieran a la compañía para decidir si existe una verdadera oportunidad de ofrecer a la gente un servicio útil para ellos.</p>
 								</div>
-							</div>
-						</div>
-						<img src="img/thumbs/thumb_case_ko_01.jpg" class="xl-img wp_img" alt="">
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>First<br>Process</span></h3>
-							</div>
-							<div class="col-md-6">
+								<img src="img/thumbs/thumb_case_ko_01.jpg" class="case-item_img" alt="tuux">
+								<h3 class="txt-en">Kick Off</h3>
+								<h3 class="txt-es">Inicio</h3>
 								<div class="txt-en">
 									<p>The team was framed in an Agile framework with two weeks sprints. The design cell started the research to define the features that must been into the product and the service required to accomplish the user's goals. Then, we turned the research results into user flows that served as a resource to design the wireframes that were socialized with the product owner and the stakeholders. Depending the impact of each feature the wireframe was tested or not in a laboratory usability test sessions with users.</p>
 									<p>After the approval of the PO, the wireframes were turned into a high fidelity mockup that was validated with stakeholders again an if the feature had not been tested in that point we executed a laboratory, remote or guerrilla usability test. With the findings of the test we improved the designed interface and finally delivered the mockups with the design specs to the developers' team. They did their magic and turn the design into a real functional product and finally, the QA area made their job to stay sure that the release was as expected.</p>
@@ -236,14 +230,9 @@
 									<p>El equipo trabajó en un entorno Agil con sprints de dos semanas. La célula de diseño comenzó la investigación para definir las características que debían estar en el producto y el servicio requerido para lograr satisfacer la necesidad de los usuarios. Luego, convertimos los resultados de la investigación en flujos de usuarios que servían como recurso para diseñar los wireframe que se socializaban con la Product Owner y los Stakeholders. Dependiendo del impacto de cada Feature de la aplicación se realizaba o no una prueba de usabilidad moderada de laboratorio con usuarios "Persona".</p>
 									<p>Después de la aprobación de la PO, los wireframe se convertían en un mockup de alta fidelidad que se validaban nuevamente con los Stakeholders y si la característica no hubiera sido probada en ese punto ejecutábamos una nueva prueba de usabilidad remota o de guerrilla. Con los resultados de las pruebas mejoramos el diseño de interfaz e interacción y finalmente entregábamos los mockups con las especificaciones de diseño al equipo de desarrolladores. Ellos realizaban su magia y convertían el diseño en un producto funcional y finalmente, el área de QA realizaba su trabajo para estar seguros que la liberación en producción cumplía con lo esperado para el producto.</p>
 								</div>
-							</div>
-						</div>
-						<img src="img/thumbs/thumb_case_ko_02.png" class="xl-img wp_img" alt="">
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right">Initial<br>Approach</h3>
-							</div>
-							<div class="col-md-6">
+								<img src="img/thumbs/thumb_case_ko_02.png" class="case-item_img" alt="tuux">
+								<h3 class="txt-en">Initial Approach</h3>
+								<h3 class="txt-es">Enfoque inicial</h3>
 								<div class="txt-en">
 									<p>I joined the team in the sprint 1 with the goal to had the MVP fulled released on sprint 5. The design thinker had been some research with the stakeholder. With the help of some qualitative data collected before the creation of the squad, she did a blueprint of the service and taking the base of the blueprint we started to think the customer journey defining the touchpoints, feelings, user actions and risks of each stage of the service.</p>
 									<p>After the customer journey creation, we started creating some paper prototypes and concept board to test the prime hypothesis with people on the streets. Then we executed some interviews with friends and family and finally, we synthesized the insights to retouched the customer journey and developed the first user persona.</p>
@@ -252,14 +241,9 @@
 									<p>Me uní al equipo en el sprint 1 con el objetivo de tener el MVP completamente liberado en el sprint 5. La diseñadora de estrategia había realizado algunas investigaciones con los Stakeholders y con la ayuda de algunos datos cualitativos recopilados antes de la creación del equipo, hizo un blueprint del servicio con el cual empezamos a pensar el customer journey definiendo los puntos de contacto, las emociones, las acciones del usuario y los riesgos de cada etapa del servicio.</p>
 									<p>Después de la creación del customer journey, empezamos a crear algunos prototipos de papel y un tablero de conceptos para probar la hipótesis principal con la gente en las calles. Luego ejecutamos algunas entrevistas con amigos y familiares y finalmente, sintetizamos las ideas para retocar el customer journey y desarrollamos la primer User Persona.</p>
 								</div>
-							</div>
-						</div>
-						<img src="img/thumbs/thumb_case_ko_03.png" class="xl-img wp_img" alt="">
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>Thinking<br>the product</span></h3>
-							</div>
-							<div class="col-md-6">
+								<img src="img/thumbs/thumb_case_ko_03.png" class="case-item_img" alt="tuux">
+								<h3 class="txt-en">Thinking the product</h3>
+								<h3 class="txt-es">Pensando el producto</h3>
 								<div class="txt-en">
 									<p>With a big picture of the service, we started to draft the screens needed to develop the app. Focused on each step of the users in the purchase stage of the journey and with the constraints of stakeholder, we decided to implement a flow without login or registration to reduce friction and obtain the more data possible to test the core of the idea so we made a step by step flow with the main features of an e-commerce.</p>
 									<p>Once we had the flow we made some first sketches for the main screens that were the starter point of the digital job.</p>
@@ -278,104 +262,63 @@
 									<p>El mockup refinadao fue entregado a los desarrolladores para la construcción del producto funcional y una vez que el QA nos dio la aprobación realizamos unas nuevas pruebas de laboratorio y guerrilla con el producto funcional.</p>
 									<p>Se detectaron algunos hallazgos cuando los usuarios interactuaron con la aplicación sin componentes nativos, especialmente en la versión móvil, por lo que algunos cambios fueron necesarios directamente en el código del producto funcional.</p>
 								</div>
-							</div>
-						</div>
-						<img src="img/thumbs/thumb_case_ko_04.png" class="xl-img wp_img" alt="">
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>The<br>result</span></h3>
-							</div>
-							<div class="col-md-6">
+								<img src="img/thumbs/thumb_case_ko_04.png" class="case-item_img" alt="tuux">
+								<h3 class="txt-en">The result</h3>
+								<h3 class="txt-es">El resultado</h3>
 								<div class="txt-en">
 									<p>At the end of the iteration of the 5 sprints, we release the product with all the features we decided based on the initial research were the most important to the users to find the product helpful and that provide us the necessary data to make a decision about the viability of the idea.</p>
 								</div>
 								<div class="txt-es">
 									<p>Al final de la iteración de los 5 sprints, lanzamos el producto con todas las características que decidimos en base a la investigación inicial eran las más importantes para que los usuarios encontraran el producto útil y que nos proporcionaran los datos necesarios para tomar una decisión sobre la viabilidad de la idea.</p>
 								</div>
+								<div style="height: 10em;"></div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</article>
-			<article class="portfolio-item" id="post-shots">
-				<a class="pt-image venobox" href="#modal-shots" data-type="inline" data-gall="portfolio" data-pt-title="SOFTWAREONE LATAM" style="background-image:url(img/thumbs/thumb_fancy.jpg)">
-					<div class="pt-overinfo">
-						<h2 class="txt-en">INTERACTIONS SHOWCASE</h2>
-						<h2 class="txt-es">SHOWCASE DE INTERACCIONES</h2>
-						<div class="partner">Tuux</div>
+				<div class="case right d-flex">
+					<div class=" case_thumb parallax_fx" data-rellax-speed="-1" data-rellax-percentage="0.5">
+						<img src="img/thumbs/thumb_erp.jpg" alt="tuux">
 					</div>
-				</a>
-				<div id="modal-shots" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2 class="txt-en">INTERACTIONS SHOWCASE</h2>
-								<h2 class="txt-es">SHOWCASE DE INTERACCIONES</h2>
-							</div>
-							<div class="col-md-3"></div>
+					<div class="case_description">
+						<h2 class="txt-en">UX/UI of an ERP software for Grupo Sancho</h2>
+						<h2 class="txt-es">UX/UI de un software ERP para Grupo Sancho</h2>
+						<div class="txt-en">
+							<p>Being the largest advertising and marketing company in Colombia and one of the biggest in the world means taking on important technological challenges. Build a software that allows the employees to manage the operative, administrative and financial tasks of the organization is one of them.</p>
 						</div>
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<video class="fancy_gif" autoplay loop style="max-height:500px">
-									<source src="img/fancy-ui-shots/tx_adidas_cooncept.mp4" type="video/mp4">
-									</source>
-								</video>
-								<video class="fancy_gif" autoplay loop>
-									<source src="img/fancy-ui-shots/tx_cradle.mp4" type="video/mp4">
-									</source>
-								</video>
-								<video class="fancy_gif" autoplay loop>
-									<source src="img/fancy-ui-shots/tx_menu_solidario.mp4" type="video/mp4">
-									</source>
-								</video>
-								<video class="fancy_gif" autoplay loop>
-									<source src="img/fancy-ui-shots/tx_user_flow.mp4" type="video/mp4">
-									</source>
-								</video>
-								<video class="fancy_gif" autoplay loop>
-									<source src="img/fancy-ui-shots/tx_grupo.mp4" type="video/mp4">
-									</source>
-								</video><video class="fancy_gif" autoplay loop>
-									<source src="img/fancy-ui-shots/tx_wmess.mp4" type="video/mp4">
-									</source>
-								</video>
-								<video class="fancy_gif" autoplay loop>
-									<source src="img/fancy-ui-shots/tx_cart_button.mp4" type="video/mp4">
-									</source>
-								</video>
-								<video class="fancy_gif" autoplay loop>
-									<source src="img/fancy-ui-shots/tx_termales.mp4" type="video/mp4">
-									</source>
-								</video>
-							</div>
-						</div><a href="https://www.youtube.com/channel/UCvXz_3Rx1YsKu-icgXV5QsA/videos/" class="btn-block txt-en" target="_blank">View high quality videos</a> <a href="https://www.youtube.com/channel/UCvXz_3Rx1YsKu-icgXV5QsA/videos/" class="btn-block txt-es" target="_blank">Ver videos en hd</a>
-					</div>
-				</div>
-			</article>
-			<article class="portfolio-item" id="post-gsancho">
-				<a class="pt-image venobox" href="#modal-gsancho" data-type="inline" data-gall="portfolio" data-pt-title="ERP PUBLICITARIO" style="background-image:url(img/thumbs/thumb_erp.jpg)">
-					<div class="pt-overinfo">
-						<h2 class="txt-en">UX FOR AN ENTERPRISE RESOURCE PLANNING SOFTWARE</h2>
-						<h2 class="txt-es">UX PARA UN SOFTWARE EMPRESARIAL</h2>
-						<div class="partner">Grupo Sancho</div>
-						<div class="case-label"><span class="case-tag"><i class="fa fa-tag"></i> Case Study</span></div>
-					</div>
-				</a>
-				<div id="modal-gsancho" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3">
-								<h2 class="txt-en">UX FOR AN ENTERPRISE RESOURCE PLANNING SOFTWARE</h2>
-								<h2 class="txt-es">UX PARA UN SOFTWARE EMPRESARIAL</h2>
-							</div>
+						<div class="txt-es">
+							<p>Ser la mayor empresa de publicidad y marketing de Colombia y una de las más grandes del mundo significa asumir importantes retos tecnológicos. Construir un software que permite a los empleados gestionar los aspectos operativos, administrativos y las tareas financieras de la organización es una de ellas.</p>
 						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>Intro</span></h3>
+						<a class="fancy-link read-more venobox" href="#modal-gs" data-icon="" data-vbtype="inline" data-gall="cases" data-title="UX/UI of an ERP software for Grupo Sancho">
+							<span class="txt-es">Conoce más</span>
+							<span class="txt-en">Read more</span>
+						</a>
+					</div>
+					<div id="modal-gs" style="display:none">
+						<div class="case-item d-flex">
+							<div class="case-item_info">
+								<div>
+									<h2 class="txt-en">Business</h2>
+									<h2 class="txt-es">Negocio</h2>
+									<div>Grupo Sancho</div>
+								</div>
+								<div>
+									<h2 class="txt-en">My Work</h2>
+									<h2 class="txt-es">Mi Trabajo</h2>
+									<div>Research, UX/UI, Front-end</div>
+								</div>
+								<div>
+									<h2 class="txt-en">Agency</h2>
+									<h2 class="txt-es">Agencia</h2>
+									<div>In house</div>
+								</div>
+								<div>
+									<h2 class="txt-en">Date</h2>
+									<h2 class="txt-es">Fecha</h2>
+									<div>2017/2019</div>
+								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="case-item_content">
 								<div class="txt-en">
 									<p>Being the largest advertising and marketing company in Colombia and one of the biggest in the world means taking on important technological challenges. Build a software that allows the employees to manage the operative, administrative and financial tasks of the organization is one of them.</p>
 									<p>For +2 years I was part of the team that took on the challenge and designed the required solutions.</p>
@@ -386,70 +329,25 @@
 									<p>Durante más de dos años fui parte del equipo que asumió el reto y diseñó las soluciones requeridas.</p>
 									<p>Inicialmente me uní al equipo como Diseñador UX encargado de llevar a cabo la investigacion con los usuarios y Stakeholders y el diseño de interacción, pero a lo largo de los meses mi posición se alineó con el diseño de interfaces y Front-end también.</p>
 								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li><a>Research</a></li>
-										<li><a>UX/UI</a></li>
-										<li><a>Code</a></li>
-									</ul>
-								</div><img src="img/thumbs/thumb_erp.jpg" class="wp_img" alt="">
-								<div class="with">
-									<h3>Working with:</h3><span class="partner">Grupo Sancho</span> <span class="date">2017 - 2019</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>The<br>Company</span></h3>
-							</div>
-							<div class="col-md-6">
+								<img src="img/thumbs/thumb_erp.jpg" class="case-item_img" alt="tuux">
+								<h3 class="txt-en">The Business, challenge and goals</h3>
+								<h3 class="txt-es">El Negocio, reto y objetivos</h3>
 								<div class="txt-en">
 									<p>The largest advertising and marketing holding in Colombia and one of the largest in the world. It has more than 1000 employees in around 8 agencies present in the business of creativity and media management throughout the country.</p>
-								</div>
-								<div class="txt-es">
-									<p>El mayor holding de publicidad y mercadeo de Colombia y uno de los más grandes en el mundo. Tiene más de 1000 empleados en alrededor de 8 agencias presentes en el negocio de la creatividad y la gestión de pauta en medios de comunicación de todo el país.</p>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>The<br>challenge</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div class="txt-en">
 									<p>Be part of the technology team responsible for designing and developing a unified software solution in which all the functionalities required by the company at an operational, administrative and financial level (ERP) will be grouped.</p>
-								</div>
-								<div class="txt-es">
-									<p>Ser parte del equipo de tecnología responsable del diseño y desarrollo de una solución de software unificada en la que todas las funcionalidades requeridas por la empresa a nivel operacional, administrativo y financiero (ERP) fueran agrupados.</p>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>The<br>goals</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div class="txt-en">
 									<p>When I joined the team, the first thing I did was a socialization process with stakeholders about the objectives of the project in the near, medium and long term, in which the need to unify the software tools used at that moment by the different areas of the company in a single software across the entire organization (ERP) as the main objective to achieve, taking in mind that in the long term the idea of being able to market the software in other organizations and countries could be a real possibility.</p>
 									<p>Having defined the main objective, I was able to determine that the understanding of the business would be fundamental to the creation process as well as the definition of the pain points and needs of the users with respect to the software they used at that time.</p>
 									<p>Once defined the requirements of the users and with the knowledge of the assimilated business could begin a face of more solid creation.</p>
 								</div>
 								<div class="txt-es">
+									<p>El mayor holding de publicidad y mercadeo de Colombia y uno de los más grandes en el mundo. Tiene más de 1000 empleados en alrededor de 8 agencias presentes en el negocio de la creatividad y la gestión de pauta en medios de comunicación de todo el país.</p>
+									<p>Ser parte del equipo de tecnología responsable del diseño y desarrollo de una solución de software unificada en la que todas las funcionalidades requeridas por la empresa a nivel operacional, administrativo y financiero (ERP) fueran agrupados.</p>
 									<p>Cuando me uní al equipo, lo primero que hice fue un proceso de socialización con los interesados acerca de los objetivos del proyecto en el corto, mediano y largo plazo en el que la necesidad de unificar las herramientas de software utilizadas en ese momento por las diferentes áreas de la compañía en un solo software fue definido como el objetivo principal a alcanzar, teniendo en cuenta que en a largo plazo la idea de poder comercializar el software en otras organizaciones y países podría ser una posibilidad real.</p>
 									<p>Habiendo definido el objetivo principal, fui capaz de determinar que el la comprensión del negocio sería fundamental para el proceso de creación, así como la definición de los puntos de dolor y las necesidades de los usuarios con respecto a el software que usaban en ese momento.</p>
 									<p>Una vez definidos los requisitos de los usuarios y con el conocimiento del negocio asimilados podría comenzar una etapa de ideación más sólida.</p>
 								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>First<br>Research</span></h3>
-							</div>
-							<div class="col-md-6">
+								<h3 class="txt-en">First Research </h3>
+								<h3 class="txt-es">Primera Investigación</h3>
 								<div class="txt-en">
 									<p>For the understanding of the business several sessions of interviews with who was my direct manager (Someone with more than 10 years of experience working in the organization) were of great value. I have taught myself to understand how the business of each of the agencies worked and the software needs that had been determined during those years should be met. At the same time several interviews with users and some surveys gave us the expected results on the perception of users. Low application performance, complicated flows and a confusing information architecture were several of the painful points that we managed to determine.</p>
 									<p>During this phase we started to raise information about the new requirements that were not covered in the current applications.</p>
@@ -458,13 +356,8 @@
 									<p>Para la comprensión del negocio, varias sesiones de entrevistas con quien fue mi gerente directo (alguien con más de 10 años de experiencia trabajando en la organización) fueron de gran valor. Me enseño a entender cómo funcionaban cada uno de los organismos de trabajo y las necesidades de software que habían sido encontradas durante esos. Al mismo tiempo, varias entrevistas con usuarios y algunas encuestas nos dieron los resultados esperados sobre la percepción de los usuarios. El bajo rendimiento de la aplicación, los flujos complicados y una confusa arquitectura de la información fueron varios de los puntos dolorosos que logramos determinar.</p>
 									<p>Durante esta fase comenzamos a reunir información sobre los nuevos requerimientos que no estaban cubiertos en las aplicaciones actuales.</p>
 								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>Synthesis<br>and hypothesis</span></h3>
-							</div>
-							<div class="col-md-6">
+								<h3 class="txt-en">Synthesis and hypothesis</h3>
+								<h3 class="txt-es">Síntesis e hipótesis</h3>
 								<div class="txt-en">
 									<p>With the information gathered in the face of research, I began to create different artifacts that allow the team to visualize the findings. The creation of a user Person with well-defined pain points was the first task fulfilled. With a site Map of the first face of the product and a User Flow of the first functionality of that face we began to create the wireframes of each screen to complete an interactive prototype that was the result that we validated with users and stakeholders to make adjustments and then move on to development.</p>
 									<p>The process was well received by all parties and allowed to improve the perceived quality of the delivered product, so we decided to iterate on these same steps for the design and development of the following functionalities.</p>
@@ -473,14 +366,9 @@
 									<p>Con la información reunida en la investigación, comencé a crear diferentes artefactos que permitieron al equipo visualizar los hallazgos. La creación de un User Persona con puntos de dolor bien definidos fue la primera tarea cumplida. Con un mapa del sitio de la primera versión del producto y un flujo de usuarios de la primera funcionalidad de esa versión empezamos a crear los mockups de cada pantalla para completar un prototipo interactivo que fue el resultado que validamos con usuarios e interesados para hacer ajustes y luego pasar al desarrollo.</p>
 									<p>El proceso fue bien recibido por todas las partes y permitió mejorar la calidad percibida del producto entregado, por lo que decidimos iterar sobre estos mismos pasos para el diseño y desarrollo de las siguientes funcionalidades.</p>
 								</div>
-							</div>
-						</div>
-						<img src="img/thumbs/thumb_erp_01.jpg" class="xl-img wp_img" alt="">
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>Need for<br>a design system</span></h3>
-							</div>
-							<div class="col-md-6">
+								<img src="img/thumbs/thumb_erp_01.jpg" class="case-item_img" alt="tuux">
+								<h3 class="txt-en">Need for a Design System </h3>
+								<h3 class="txt-es">Necesidad de un sistema de diseño</h3>
 								<div class="txt-en">
 									<p>As we were going through the design process and the app functionalities increased, we began to identify a series of inconsistencies in the interface that were generating evident usability problems. The developers were writing a non recursive code and the final product on many occasions distanced strongly from the defined design generating inconsistency of use, so we decided to create a design system for the ERP that was a common language and a unique source of truth for designers and developers.</p>
 									<p>We start by creating an inventory of all the existing components in the application until then, then categorize them into atoms, molecules, components and layouts. We made a checklist of colors and typographies and we also identify the context of use of each part of the system.</p>
@@ -493,152 +381,83 @@
 									<p>Una vez que tuvimos el inventario, empezamos a crear las bibliotecas para el equipo de diseño de tal manera que cada miembro pudiera diseñar las maquetas y prototipos en coherencia con el resto del equipo y la aplicación. Estos mismos componentes se materializaron en código HTML / CSS / JS para que al pasar los prototipos a desarrollo, el equipo contara exactamente con los mismos componentes disponibles para su aplicación real y funcional.</p>
 									<p>Finalmente esta parte del proyecto culminó con la documentación de todo el sistema y la divulgación del manual para todo el equipo.</p>
 								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span>The<br>Result</span></h3>
-							</div>
-							<div class="col-md-6">
+								<h3 class="txt-en">The Result</h3>
+								<h3 class="txt-es">El resultado</h3>
 								<div class="txt-en">
 									<p>My time in the Group was two years of continuous growth. The users perceived a big change between the past applications and the new ERP. The productivity of the company had a palpable increase and we know that part of the fault was the software we designed, although it was never a fully finished product due to its continuous growth and new requirements, it always allowed us to interact with the users and have the opportunity to improve in each release.</p>
 								</div>
 								<div class="txt-es">
 									<p>Mi tiempo en el Grupo fue de dos años de crecimiento continuo. Los usuarios percibieron un gran cambio entre las aplicaciones anteriores y el nuevo ERP. La productividad de la compañía tuvo un aumento palpable y sabemos que parte de la culpa fue del software que diseñamos, aunque nunca fue un producto completamente terminado debido al crecimiento continuo y los nuevos requerimeintos, siempre nos permitió interactuar con los usuarios y tener la oportunidad de mejorar en cada lanzamiento.</p>
 								</div>
+								<a href="img/thumbs/sdd.html" class="fancy-link" data-icon="" target="_blank">Preview System</a>
+								<span style="display: inline-block; height: 32px;"></span>
+								<a href="erp_dss/index.html" class="fancy-link" data-icon="" target="_blank">Explore Documentation</a>
+								<div style="height: 10em;"></div>
 							</div>
 						</div>
-						<table style="margin:auto">
-							<tr>
-								<td><a href="img/thumbs/sdd.html" class="btn-block" target="_blank">Preview System</a></td>
-								<td><a href="erp_dss/index.html" class="btn-block" target="_blank">Explore Documentation</a></td>
-							</tr>
-						</table>
 					</div>
 				</div>
-			</article>
-			<article class="portfolio-item" id="post-adecc">
-				<a class="pt-image venobox" href="#modal-adecc" data-type="inline" data-gall="portfolio" data-pt-title="ADECCO COLOMBIA" style="background-image:url(img/thumbs/thumb_adecco.jpg)">
-					<div class="pt-overinfo">
-						<h2>ADECCO COLOMBIA</h2>
-						<div class="partner">Pixelpro</div>
+				<div class="case_quote txt-es">Me apasiona crear productos digitales pero la habilidad más importante que deseo alcanzar es entender el comportamiento de los seres humanos para poder diseñar experiencias que generen valor.</div>
+				<div class="case_quote txt-en">I am passionate about creating digital products but the most important skill I want to achieve is to understand human behavior in order to design experiences that generate value.</div>
+				<div class="case d-flex">
+					<div class=" case_thumb parallax_fx" data-rellax-speed="1" data-rellax-percentage="0.5">
+						<img src="img/thumbs/thumb_lsc.jpg" alt="tuux">
 					</div>
-				</a>
-				<div id="modal-adecc" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>ADECCO COLOMBIA</h2>
-							</div>
-							<div class="col-md-3"></div>
+					<div class="case_description">
+						<h2 class="txt-en">Design of a landing page for a charity campaign</h2>
+						<h2 class="txt-es">Diseño de un landing page para una campaña benéfica</h2>
+						<div class="txt-en">
+							<p>Fundación Bilblioseo is a group of people who work to eradicate the mental poverty of children and young people in rural and emerging communities, educating them as Doers who lead change and serve their community in rural Bogotá. They needed a landing page and I could help them.</p>
 						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">El<br>Reto</span> <span class="txt-en">The<br>Challenge</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div class="txt-es">
-									<p>Re diseñar y desarrollar el sitio web de la filial para Colombia de una de las temporales de empleo mas grandes del mundo tomando como punto de partida el manual de imagen de la marca. El reto era interesante y el peso del cliente exigía un trabajo duro para lograr los objetivos. En la agencia sabíamos que seria uno de nuestros trabajos mas importantes y así lo asumimos.</p>
-								</div>
-								<div class="txt-en">
-									<p>Re-design and develop the website of the subsidiary for Colombia of one of the largest employment temporary in the world (Adecco) taking as a starting point the brand guidelines. The challenge was interesting and the client's weight required hard work to achieve the goals. In the agency we knew it would be one of our most important jobs and we assume that.</p>
-								</div>
-							</div>
-							<div class="col-md-3"></div>
+						<div class="txt-es">
+							<p>La Fundación Bilblioseo es un grupo de personas que trabajan por erradicar la pobreza mental de niños y jóvenes en comunidades rurales y emergentes, educándolos como Hacedores que lideren el cambio y sirvan a su comunidad en la Bogotá rural. Ellos necesitaban un landing page y yo podia ayudarlos. </p>
 						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li><a href="javascript:;">Custom CMS Development</a></li>
-										<li><a href="javascript:;">HTML - CSS - JavaScript</a></li>
-										<li><a href="javascript:;">User Experience</a></li>
-										<li><a href="javascript:;">User Interface</a></li>
-									</ul>
-								</div><img width="1805" height="1200" src="img/thumbs/thumb_adecco.jpg" class="wp_img" alt="">
-								<div class="with">
-									<h3>Working with:</h3><span class="partner">Pixelpro</span> <span class="date">2016 - December</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">La<br>Solución</span> <span class="txt-en">The<br>Answer</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div class="txt-es">
-									<p>Un sitio que cumple 100% con los lineamientos del manual de imagen de la marca, creado especialemente para las necesidades comunicativas del cliente e integrado completamente con la imagen global del negocio. El día que publicamos el sitio web celebré uno de los logros mas significativos de mi carrera como diseñador web.</p>
-								</div>
-								<div class="txt-en">
-									<p>A website 100% ruled by the guidelines of the brand image manual, created especially for the client's communicative needs and fully integrated with the overall brand of the business. The day we published the website I celebrated one of the most significant achievements of my career as a web designer.</p>
-								</div>
-							</div>
-						</div><a href="http://www.adecco.com.co/" class="btn-block" target="_blank">visit the site</a>
+						<a class="fancy-link read-more venobox" data-icon="" href="#modal-lsc" data-vbtype="inline" data-gall="cases" data-title="Design of a landing page for a charity campaign">
+							<span class="txt-es">Conoce más</span>
+							<span class="txt-en">Read more</span>
+						</a>
 					</div>
-				</div>
-			</article>
-			<article class="portfolio-item col-2x" id="post-lsc">
-				<a class="pt-image venobox" href="#modal-lsc" data-type="inline" data-gall="portfolio" data-pt-title="ACH Colombia" style="background-image:url(img/thumbs/thumb_lsc.jpg)">
-					<div class="pt-overinfo">
-						<h2>#LosSueñosContinuan</h2>
-						<div class="partner">Voluntario</div>
-						<div class="case-label"><span class="case-tag"><i class="fa fa-tag"></i> Case Study</span></div>
-					</div>
-				</a>
-				<div id="modal-lsc" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>#LosSueñosContinuan</h2>
+					<div id="modal-lsc" style="display:none">
+						<div class="case-item d-flex">
+							<div class="case-item_info">
+								<div>
+									<h2 class="txt-en">Business</h2>
+									<h2 class="txt-es">Negocio</h2>
+									<div>Fundación Biblioseo</div>
+								</div>
+								<div>
+									<h2 class="txt-en">My Work</h2>
+									<h2 class="txt-es">Mi Trabajo</h2>
+									<div>UX/UI, Front-end</div>
+								</div>
+								<div>
+									<h2 class="txt-en">Agency</h2>
+									<h2 class="txt-es">Agencia</h2>
+									<div>Volunteer</div>
+								</div>
+								<div>
+									<h2 class="txt-en">Date</h2>
+									<h2 class="txt-es">Fecha</h2>
+									<div>05/2020</div>
+								</div>
 							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">Contexto</span> <span class="txt-en">Context</span></h3>
-							</div>
-							<div class="col-md-6">
+							<div class="case-item_content">
 								<div class="txt-es">
 									<p>La Fundación Bilblioseo es un grupo de personas que trabajan por erradicar la pobreza mental de niños y jóvenes en comunidades rurales y emergentes, educándolos como Hacedores que lideren el cambio y sirvan a su comunidad en la Bogotá rural. </p>
-
 									<p>Durante el inicio de la cuarentena por el COVID-19 la fundación tubo que congelar sus operaciones presenciales en la zona y volcar sus esfuerzos a conseguir los recursos necesarios para dotara a los niños de la comunidad con un Taller del Hacedor, un espacio que mantendrá vivo el espíritu de la Biblioteca de la Creatividad y les permitirá conectarse a un Mundo de oportunidades al que antes no podían acceder.</p>
-
 									<p>Cuando me entere, quise aportar mi conocimiento a esta causa y de manera voluntaria aportar el diseño y desarrollo de un landing page que les permitiera dirigir sus esfuerzos en redes sociales a un solo lugar donde los interesados pudieran encontrar la información necesaria para decidirse a invertir en este proyecto.</p>
 								</div>
 								<div class="txt-en">
 									<p>Fundación Bilblioseo is a group of people who work to eradicate the mental poverty of children and young people in rural and emerging communities, educating them as Doers who lead change and serve their community in rural Bogotá. </p>
-
 									<p>During the beginning of the COVID-19 quarantine, the organization had to freeze its on-site operations in the area and focus its efforts on obtaining the necessary resources to provide the children of the community with a Maker's Workshop, a space that will keep alive the spirit of the Library of Creativity and allow them to connect to a world of opportunities they could not access before.</p>
-
 									<p>When I found out, I wanted to contribute my knowledge to this cause and voluntarily provide the design and development of a landing page that would allow them to direct their social networking efforts to one place where interested parties could find the information they needed to decide to invest in this project.</p>
 								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li><span>HTML - CSS - JavaScript</span></li>
-										<li><span>User Experience</span></li>
-										<li><span>User Interface</span></li>
-									</ul>
-								</div><img width="1715" height="1139" src="img/thumbs/thumb_lsc.jpg" class="wp_img" alt="">
-								<div class="with">
-									<h3>Working with:</h3><span class="partner">Volunteer</span> <span class="date">2020 - May</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">Definición</span> <span class="txt-en">Definition</span></h3>
-							</div>
-							<div class="col-md-6">
+
+								<img src="img/thumbs/thumb_lsc.jpg" class="case-item_img" alt="tuux">
+								<h3 class="txt-en">Definition</h3>
+								<h3 class="txt-es">Definición</h3>
 								<div class="txt-es">
 									<p>Lo primero que hicimos fu realizar una alineación de las expectativas en cuento al alcances del Landing, las necesidades puntuales que tenían desde la fundación y el conocimiento que tenían de los inversionistas a quienes debíamos llegar con el mensaje.</p>
-
 									<b>Necesidades:</b>
 									<ol>
 										<li>Focalizar los diferentes llamados a la acción para que los inversionistas decididos pudieran encontrar rápida y fácilmente los mecanismos mediante los cuales pudiesen invertir en la campaña.</li>
@@ -647,13 +466,11 @@
 										<li>Construir confianza y credibilidad en los inversionistas sobre la trayectoria, legalidad y seriedad de la fundación.</li>
 										<li>Ofrecer datos de contacto y enlaces a redes sociales.</li>
 									</ol>
-
 									<b>Persona:</b>
 									<p>La fundación había disparado los post de redes sociales de manera empírica, sin segmentación ni campañas pagas y sin embargo la respuesta fue positiva y muy orgánica. Por lo que sabíamos que los usuarios cumplían con diferentes demográficos el target era demasiado amplio. Los mayores hallazgos que teníamos eran sobre personas que ya habían realizado su inversion y el mayor insight que poseíamos era que las personas se sentían mucho mas motivadas a participar cuando se sentían identificadas con las personas detrás de las historias.</p>
 								</div>
 								<div class="txt-en">
 									<p>The first thing we did was to align the expectations regarding the scope of the Landing, the specific needs they had since the organization and the knowledge they had of the investors we had to reach with the message.</p>
-
 									<b>Needs:</b>
 									<ol>
 										<li>To focus the different calls to action so that the determined investors could quickly and easily find the mechanisms through which they could invest in the campaign.</li>
@@ -662,530 +479,163 @@
 										<li>Build confidence and credibility in investors about the organization's track record, legality and seriousness.</li>
 										<li>Provide contact details and links to social networks.</li>
 									</ol>
-
 									<b>Persona:</b>
 									<p>The organization had shot the social network posts in an empirical way, without segmentation or paid campaigns and yet the response was positive and very organic. So we knew that users met different demographics and the target was too broad. The biggest findings we had were about people who had already made their investment and the biggest insight we had was that people were much more motivated to participate when they felt identified with the people behind the stories.</p>
 								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<img src="img/thumbs/thumb_lsc_01.jpg" class="xl-img wp_img" alt="">
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">Ideación</span> <span class="txt-en">Ideation</span></h3>
-							</div>
-							<div class="col-md-6">
+								<img src="img/thumbs/thumb_lsc_01.jpg" class="case-item_img" alt="tuux">
+								<h3 class="txt-en">Ideation</h3>
+								<h3 class="txt-es">Ideación</h3>
 								<div class="txt-es">
 									<p>Con las necesidades de la fundación definidas y la información que me suministraron sobre las Personas que ellos habían identificado, diseñé un wireframe con la secciones y contenidos que consideré fundamentales para el landing.</p>
-
 									<p>El wireframe lo socializamos en equipo con la fundación e iteramos sobre el diseño para empezar a desarrollar la interfaz de mi parte y ellos a construir los textos e imágenes que necesitaríamos para publicar.</p>
-
 									<p>El landing fue desarrollado utilizando los componentes y el sistema de diseño de Bootstrap 4 sin modificaciones, solo los colores primarios fueron alterados para ajustarse a los requerimientos de la marca.</p>
-
 									<p>La primer version del sitio quedo lista en pocos días y luego de incluir los contenidos que ellos me suministraron, ejecutamos una nueva sesión de socialización con el equipo, realizamos ajustes, revisamos los contenidos y publicamos la primer version.</p>
 								</div>
 								<div class="txt-en">
 									<p>With the needs of the organization defined and the information they provided me about the Persona they had identified, I designed a wireframe with the sections and contents that I considered fundamental for the landing.</p>
-
 									<p>The wireframe was socialized with the team and we iterated on the design to start developing the interface on my behalf and they built the texts and images we would need to publish.</p>
-
 									<p>The landing was developed using the components and design system of Bootstrap 4 without modifications, only the primary colors were altered to meet the requirements of the brand.</p>
-
 									<p>The first version of the site was ready in a few days and after including the contents they provided me with, we ran a new socialization session with the team, made adjustments, reviewed the contents and published the first version.</p>
 								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">Pruebas</span> <span class="txt-en">Test</span></h3>
-							</div>
-							<div class="col-md-6">
+								<h3 class="txt-en">Test</h3>
+								<h3 class="txt-es">Pruebas</h3>
 								<div class="txt-es">
 									<p>Con la primer version del producto finalizada y el código de StatsCounter instalado decidimos publicar el landing para dirigir todos los esfuerzos en redes sociales hacia el sitio web y entender el recibimiento de las personas y el movimiento de la inversión durante una semana.</p>
-
 									<p>Los datos del trafico con respecto a la duración de las sesiones y la tasa de rebote nos permitieron generar algunas hipótesis sobre una serie de ajustes que debíamos realizar para ofrecer respuestas a un trafico que provenía del exterior y no había sido contemplado al inicio del proyecto ademas del movimiento de algunos llamados a la acción que no cumplían su objetivo. Con los ajustes realizados publicamos la version 1.1 del sitio para dejarla por un periodo de tiempo más largo.</p>
 								</div>
 								<div class="txt-en">
 									<p>With the first version of the product completed and the StatsCounter code installed we decided to publish the landing to direct all social networking efforts to the website and understand the reception of people and the movement of the investment for a week.</p>
-
 									<p>The traffic data with respect to the duration of the sessions and the bounce rate allowed us to generate some hypotheses about a series of adjustments that we had to make in order to offer answers to a traffic that came from abroad and had not been contemplated at the beginning of the project, as well as the movement of some calls to action that did not meet their objective. With the adjustments made we published version 1.1 of the site to leave it for a longer period of time.</p>
 								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<img src="img/thumbs/thumb_lsc_02.png" class="xl-img wp_img" alt="">
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">Resultado</span> <span class="txt-en">Result</span></h3>
-							</div>
-							<div class="col-md-6">
+								<img src="img/thumbs/thumb_lsc_02.png" class="case-item_img" alt="tuux">
+								<h3 class="txt-en">The result</h3>
+								<h3 class="txt-es">El resultado</h3>
 								<div class="txt-es">
 									<p>Poder trabajar en este proyecto fue demasiado gratificante. Saber que como diseñador pude aportar mi conocimiento y metodología de trabajo a una causa noble en un momento difícil fue una experiencia de vida y profesional que dejó huella en mí, y lo mas importante los objetivos de la campaña se cumplieron, 20 niños están recibiendo su kit del hacedor y la vision de la fundación se expandido a seguir ayudando a muchos niños más. </p>
 								</div>
 								<div class="txt-en">
 									<p>Being able to work on this project was too rewarding. Knowing that as a designer I was able to contribute my knowledge and work methodology to a noble cause in a difficult moment was a life and professional experience that left its mark on me, and most importantly the objectives of the campaign were met, 20 children are receiving their kit from the maker and the vision of the organization expanded to continue helping many more children. </p>
 								</div>
+								<a href="http://biblioseo.org/los-suenos-continuan" class="fancy-link" data-icon="" target="_blank"> visit the site</a>
+								<div style="height: 10em;"></div>
 							</div>
-							<div class="col-md-3"></div>
 						</div>
-						<a href="http://biblioseo.org/los-suenos-continuan" class="btn-block" target="_blank">visit the site</a>
 					</div>
 				</div>
-			</article>
-			<article class="portfolio-item" id="post-unic">
-				<a class="pt-image venobox" href="#modal-unic" data-type="inline" data-gall="portfolio" data-pt-title="UNICA" style="background-image:url(img/thumbs/thumb_unica.jpg)">
-					<div class="pt-overinfo">
-						<h2>ÚNICA</h2>
-						<div class="partner">Tropico2T</div>
+				<div class="case right d-flex" style="margin-bottom: 0;">
+					<div class=" case_thumb parallax_fx" data-rellax-speed="-1" data-rellax-percentage="0.5">
+						<img src="img/thumbs/thumb_case_be.png" alt="tuux">
 					</div>
-				</a>
-				<div id="modal-unic" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>ÚNICA</h2>
-							</div>
-							<div class="col-md-3"></div>
+					<div class="case_description">
+						<h2 class="txt-en">Other cases and concepts in Behance</h2>
+						<h2 class="txt-es">Otros casos y conceptos en Behance</h2>
+						<div class="txt-en">
+							<p>If you are interested in knowing more about my designs I invite you to visit my profile at Behance, there I have published different projects I have worked on and concepts I design occasionally.</p>
 						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">El<br>Reto</span> <span class="txt-en">The<br>Challenge</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div class="txt-es">
-									<p>El reto era importante; liderar el equipo que re diseñaría el portal web de una de las mas importantes instituciones de educación blingue de la ciudad. Se trataba de tomar un sitio web desarticulado y complejo para convertirlo en uno completamente nuevo, que cumpliera con los estándares actuales de diseño y funcionalidad teniendo como pilares fundamentales la correcta experiencia del usuario y el debido manejo de la información.</p>
-								</div>
-								<div class="txt-en">
-									<p>The challenge was important; Lead the team that would design the webpage of one of the most important institutions of bilingual education of the city. It was a question of taking a disjointed and complex website to make it a completely new one, that complies with the current standards of design and functionality, having as fundamental pillars the correct user experience and the proper handling of the information.</p>
-								</div>
-							</div>
-							<div class="col-md-3"></div>
+						<div class="txt-es">
+							<p>Si estas interesadx en conocer más sobre mis diseños te invito a visitar mi perfil en Behance, allí tengo publicados diferentes proyectos en los que trabajado y conceptos que diseño ocasionalmente.</p>
 						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li><a href="javascript:;">Project Managment</a></li>
-										<li><a href="javascript:;">User Experience</a></li>
-										<li><a href="javascript:;">User Interface</a></li>
-									</ul>
-								</div><img width="3177" height="1562" src="img/thumbs/thumb_unica.jpg" class="wp_img" alt="">
-								<div class="with">
-									<h3>Working with:</h3><span class="partner"></span> <span class="date">2014 - December</span>
-								</div>
+						<a class="fancy-link read-more" href="https://www.behance.net/tuux" data-icon="" target="_blank">
+							<span class="txt-es">Ir a Behance</span>
+							<span class="txt-en">Go to Behance</span>
+						</a>
+						<a href="#modal-be" class="venobox" data-vbtype="inline" data-title="OTHER CASES AND CONCEPTS IN BEHANCE" data-gall="cases" style="display: none !important;">case</a>
+					</div>
+					<div id="modal-be" style="display:none">
+						<div class="case-item d-flex">
+							<img src="img/thumbs/thumb_case_be.png" alt="tuux" class="case-item_img" style="padding-top: 0; margin-top: 0; max-width: 600px; padding-right: 32px;">
+							<div>
+								<p class="txt-en">If you are interested in knowing more about my designs I invite you to visit my profile at Behance, there I have published different projects I have worked on and concepts I design occasionally.</p>
+								<p class="txt-es">Si estas interesadx en conocer más sobre mis diseños te invito a visitar mi perfil en Behance, allí tengo publicados diferentes proyectos en los que trabajado y conceptos que diseño ocasionalmente.</p>
+								<a class="fancy-link read-more" href="https://www.behance.net/tuux" data-icon="" target="_blank">
+									<span class="txt-es">Ir a Behance</span>
+									<span class="txt-en">Go to Behance</span>
+								</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">La<br>Solución</span> <span class="txt-en">The<br>Answer</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div class="txt-es">
-									<p>Cuando tu cliente confía en tu trabajo estas camino a convertirte en un buen diseñador, pero si ademas se convierte en tu amigo entonces has logrado que tu obra trascienda la barrera de lo netamente laboral para convertirse en una pieza que siempre recordaras (aun hoy tengo la oportunidad de trabajar con ellos ocasionalmente).</p>
-								</div>
-								<div class="txt-en">
-									<p>When your client trust on your work, you are going to become a good designer, but if you become your friend then you have succeeded in making your work transcend the barrier of the purely labor to become a piece that you will always remember (even today I have the Opportunity to work with them occasionally).</p>
-								</div>
-							</div>
-						</div><a href="http://www.unica.edu.co/" class="btn-block" target="_blank">visit the site</a>
 					</div>
 				</div>
-			</article>
-			<article class="portfolio-item col-2x" id="post-sone">
-				<a class="pt-image venobox" href="#modal-sone" data-type="inline" data-gall="portfolio" data-pt-title="SOFTWAREONE LATAM" style="background-image:url(img/thumbs/thumb_softwareone.jpg)">
-					<div class="pt-overinfo">
-						<h2>SOFTWAREONE LATAM</h2>
-						<div class="partner">Pixelpro</div>
+		</section>
+		<section id="about" class="section section-padding">
+			<div class="section_hedaline">
+				<h2 class="txt-es">ACERCA</h2>
+				<h2 class="txt-en">ABOUT</h2>
+				<div class="fancy-divider"></div>
+			</div>
+			<div class="section_content">
+				<div class="about_wrp d-flex">
+					<div class="about_item txt-en" style="max-width: 40%; padding-right: 32px;">
+						<p>I remember the world without computers and social network but made part of the internet revolution so I grow wanted to be a "ruler breaker".</p>
+						<p>Now I'm an urban bicycle rider, amateur electronic music producer and an idealist designer that believe in my profession as a way of life to create exiting things and not only as a job to push pixels in a screen.</p>
+						<p>Over the years I've developed different skills. I use research techniques and information analysis to design human experiences and manipulate software tools to give life to visual designs. I also know to use front-end development technologies to design interfaces.</p>
+						<h2 style="margin-top: 2.5em;">I Think I'm</h2>
+						<p>Flexible, a mediator, persuasive, business oriented, a decision maker, empathic, good talker, passionate and humble.</p>
 					</div>
-				</a>
-				<div id="modal-sone" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>SOFTWAREONE LATAM</h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">El<br>Reto</span> <span class="txt-en">The<br>Challenge</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div class="txt-es">
-									<p>Una agencia contacta la agencia en la que tu trabajas para diseñar y desarrollar el blog para LATAM de una de las comercializadoras de software para empresas y negocios mas grande del mundo y tu quedas en el medio de todos. Esos son el tipo de retos que quieres afrontar como diseñador y cuadno todo sale bien son el tipo de diseños que pones en tu portafolio.</p>
-								</div>
-								<div class="txt-en">
-									<p>An agency contacts the agency where you work to design and develop the LATAM blog for one of the world's largest software marketers. Those are the kind of challenges that you want to face as a designer and when everything works out is the kind of designs you put in your portfolio.</p>
-								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li><a href="javascript:;">Custom CMS Development</a></li>
-										<li><a href="javascript:;">HTML - CSS - JavaScript</a></li>
-										<li><a href="javascript:;">User Experience</a></li>
-										<li><a href="javascript:;">User Interface</a></li>
-									</ul>
-								</div><img width="1140" height="500" src="img/thumbs/thumb_softwareone.jpg" class="wp_img" alt="">
-								<div class="with">
-									<h3>Working with:</h3><span class="partner">Pixelpro</span> <span class="date">2016 - July</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">La<br>Solución</span> <span class="txt-en">The<br>Answer</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div class="txt-es">
-									<p>Un diseño web tranquilo pero respresentativo de la marca, un desarrollo limpio y escalable que le permite a la empresa y sus colaboradores contar con una herramienta echa a su medida y que les permite sembrar la semilla de una comunidad entre sus usuarios y clientes.</p>
-								</div>
-								<div class="txt-en">
-									<p>A calm but representative brand web design, a clean and scalable development that allows the company nd its collaborators to have a tool that is tailored to them and that allows them to sow the seeds of a community among its users and clients.</p>
-								</div>
-							</div>
-						</div><a href="http://blog-latam.softwareone.com/" class="btn-block" target="_blank">visit the site</a>
+					<div class="about_item txt-en">
+						<h2>I work every day with</h2>
+						<ul style="padding-left: 14px;">
+							<li>Different UX Methods & Artifacts</li>
+							<li>Interaction Design</li>
+							<li>Prototyping & Testing</li>
+							<li>Front-end</li>
+						</ul>
 					</div>
-				</div>
-			</article>
-			<article class="portfolio-item" id="post-intee">
-				<a class="pt-image venobox" href="#modal-intee" data-type="inline" data-gall="portfolio" data-pt-title="INTEEGRA" style="background-image:url(img/thumbs/thumb_inteegra.jpg)">
-					<div class="pt-overinfo">
-						<h2>INTEEGRA</h2>
-						<div class="partner">Inteegra</div>
+					<div class="about_item txt-en">
+						<h2>I’m interesting in</h2>
+						<ul style="padding-left: 14px;">
+							<li>Behavioral Psychology</li>
+							<li>Data Analysis</li>
+							<li>Strategy & Leadership</li>
+							<li>Music & Bikes 🙂</li>
+						</ul>
 					</div>
-				</a>
-				<div id="modal-intee" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>INTEEGRA</h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">El<br>Reto</span> <span class="txt-en">The<br>Challenge</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div>
-									<p class="txt-es">Cuando un grupo de emprendedores te busca para construir la marca de una empresa de telecomunicaciones desde cero sabes que no sera tarea fácil, pero lo haces con gusto. Las premisas eran modernidad y simplicidad. En principio necesitaban todo lo relacionad al branding del negocio: Logo, membrete, tarjetas y por supuesto pagina web</p>
-								</div>
-								<div>
-									<p class="txt-en">When a group of entrepreneurs looks for you to build the brand of a telecommunications company from scratch you know that it will not be an easy task, but you do it with pleasure. The premises were modernity and simplicity. In principle they needed everything related to the branding of the business: logo, letterhead, cards and of course web page.</p>
-								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li><span>Brand Design</span></li>
-										<li><span>HTML - CSS - JavaScript</span></li>
-										<li><span>User Experience</span></li>
-										<li><span>Project Managment</span></li>
-									</ul>
-								</div><img width="4272" height="2848" src="img/thumbs/thumb_inteegra.jpg" class="wp_img" alt="">
-								<div class="with">
-									<h3>Working with:</h3><span class="partner">Inteegra</span> <span class="date">2013 - August</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">La<br>Solución</span> <span class="txt-en">The<br>Answer</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div>
-									<p class="txt-es">2.5 años trabajando como diseñador In House de la empresa (aun hoy tengo la oportunidad de trabajar con ellos ocasionalmente) se definen como un gran logro para mi. La marca ha sido afianzada en la memoria de sus clientes y el respeto muto por el trabajo de Tuux han sido base fundamental en la evolución de los dos conceptos.</p>
-								</div>
-								<div>
-									<p class="txt-en">2.5 years working as In House designer of the company (even today I have the opportunity to work with them occasionally) are defined as a great achievement for me. The brand has been strengthened in the memory of its customers and the mutual respect for the work of Tuux have been fundamental base in the evolution of the two concepts.</p>
-								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div><a href="http://inteegra.co/" class="btn-block" target="_blank">visit the site</a>
+					<div class="about_item txt-es" style="max-width: 40%; padding-right: 32px;">
+						<p>Recuerdo el mundo sin ordenadores y sin redes sociales, pero formé parte de la revolución de Internet, así que crecí queriendo ser un "rompedor reglas".</p>
+						<p>Ahora soy un ciclista urbano, productor de música electrónica amateur y un diseñador idealista que cree en mi profesión como una forma de vida para crear cosas emocionantes y no sólo como un trabajo para empujar píxeles en una pantalla.</p>
+						<p>A lo largo de los años he desarrollado diferentes habilidades. Utilizo técnicas de investigación y análisis de información para diseñar experiencias humanas y manipulo aplicaciones para dar vida a diseños visuales. También se utilizar tecnologias de desarrollo front-end para diseñar interfaces.</p>
+						<h2 style="margin-top: 2.5em;">Considero que soy</h2>
+						<p>Flexible, un mediador, persuasivo, orientado a los negocios, un tomador de decisiones, empático, buen conversador, apasionado y humilde.</p>
 					</div>
-				</div>
-			</article>
-			<article class="portfolio-item" id="post-achco">
-				<a class="pt-image venobox" href="#modal-achco" data-type="inline" data-gall="portfolio" data-pt-title="ACH Colombia" style="background-image:url(img/thumbs/thumb_ach.jpg)">
-					<div class="pt-overinfo">
-						<h2>ACH Colombia</h2>
-						<div class="partner">Pixelpro</div>
+					<div class="about_item txt-es">
+						<h2>Trabajo todos los días con</h2>
+						<ul style="padding-left: 14px;">
+							<li>Diferentes métodos y artefactos UX</li>
+							<li>Diseño de interacción</li>
+							<li>Prototipos y pruebas</li>
+							<li>Front-end</li>
+						</ul>
 					</div>
-				</a>
-				<div id="modal-achco" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>ACH Colombia</h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">El<br>Reto</span> <span class="txt-en">The<br>Challenge</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div>
-									<p class="txt-es">Un buen blog institucional se puede convertir fácilmente en el corazón para la estrategia de markenting online de cualquier empresa. Generar una conexión cercana y de interés con los clientes siempre es una alternativa que se debe implementar y cuando la principal empresa de transacciones electrónicas del país nos contacto para desarrollar su blog , en la agencia sabíamos que seria un reto muy interesante.</p>
-								</div>
-								<div>
-									<p class="txt-en">A good institutional blog can easily become the heart of any company's online marketing strategy. Generating a close and interesting connection with customers is always an alternative that should be implemented. When the main electronic money transactions company in the country contacted us to develop their blog, in the agency we knew that would be a very interesting challenge.</p>
-								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li><span>Custom CMS Development</span></li>
-										<li><span>HTML - CSS - JavaScript</span></li>
-										<li><span>User Experience</span></li>
-										<li><span>User Interface</span></li>
-									</ul>
-								</div><img width="1715" height="1139" src="img/thumbs/thumb_ach.jpg" class="wp_img" alt="">
-								<div class="with">
-									<h3>Working with:</h3><span class="partner">Pixelpro</span> <span class="date">2016 - November</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">La<br>Solución</span> <span class="txt-en">The<br>Answer</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div>
-									<p class="txt-es">La respuesta fue un blog completamente administrable bajo la plataforma WordPress con un theme 100% desarrollado para las necesidades del cliente. Actualmente cuenta con cientos de visitas al mes y se ha convertido uno delos principales medios de comunicación de la empresa.</p>
-								</div>
-								<div>
-									<p class="txt-en">The answer was a completely manageable blog under the platform WordPress with a theme 100% developed for the needs of the client. It currently has hundreds of visits a month and has become one of the main media of the company.</p>
-								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div><a href="http://blog.achcolombia.com.co/" class="btn-block" target="_blank">visit the site</a>
+					<div class="about_item txt-es">
+						<h2>Estoy interesado en</h2>
+						<ul style="padding-left: 14px;">
+							<li>Sicología del comportamiento</li>
+							<li>Análisis de datos</li>
+							<li>Estrategia y liderazgo</li>
+							<li>Musica & Bicis 🙂</li>
+						</ul>
 					</div>
-				</div>
-			</article>
-			<article class="portfolio-item" id="post-pcal">
-				<a class="pt-image venobox" href="#modal-pcal" data-type="inline" data-gall="portfolio" data-pt-title="EIC" style="background-image:url(img/thumbs/thumb_pc.jpg)">
-					<div class="pt-overinfo">
-						<h2>PUEBLO CALIENTE</h2>
-						<div class="partner">Tuux</div>
-					</div>
-				</a>
-				<div id="modal-pcal" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>PUEBLO CALIENTE</h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">El<br>Reto</span> <span class="txt-en">The<br>Challenge</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div>
-									<p class="txt-es">La reunión de varios artistas de diferentes disciplinas como músicos, djs, grafiteros, fotógrafos y escritores y la necesidad de materializar las necesidades de cada uno de ellos en un solo lugar y bajo una misma respuesta estética no es fácil. Un desafío en el que quise participar de inmediato y sin pensarlo dos veces.</p>
-								</div>
-								<div>
-									<p class="txt-en">The meeting of several artists from different disciplines like musicians, DJs, graffiti artists, photographers and writers and the requeriment to materialize the needs of each in one place and under the same aesthetic response is not easy. A challenge in which I wanted to participate immediately and without thinking twice.</p>
-								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li><span>Custom CMS Development</span></li>
-										<li><span>HTML - CSS - JavaScript</span></li>
-										<li><span>User Experience</span></li>
-										<li><span>User Interface</span></li>
-									</ul>
-								</div><img width="1536" height="1266" src="img/thumbs/thumb_pc.jpg" class="wp_img" alt="">
-								<div class="with">
-									<h3>Working with:</h3><span class="partner">Tuux</span> <span class="date">2018 - June</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">La<br>Solución</span> <span class="txt-en">The<br>Answer</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div>
-									<p class="txt-es">Los proyectos paralelos suelen ser la mejor forma de explorar nuestras necesidades creativas propias. Este es el caso de "PUEBLO CALIENTE" un colectivo de artistas en el que tengo la oportunidad de participar bajo el rol de lead web designer y músico ocasional. Buscamos trascender las barreras de la comunicación web tradicional desarrollando un sitio diferente, impactante e innovador.</p>
-								</div>
-								<div>
-									<p class="txt-en">Side projects are usually the best way to explore our own creative needs. This is the case of "PUEBLO CALIENTE" an artist's collective in which I have the opportunity to participate under the role of lead web designer and occasional musician. We seek to transcend the limit of traditional web communication developing a different, impactful and innovative site.</p>
-								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div><a href="http://pueblocaliente.xyz" class="btn-block" target="_blank">visit the site</a>
-					</div>
-				</div>
-			</article>
-			<article class="portfolio-item" id="post-lafay">
-				<a class="pt-image venobox" href="#modal-lafay" data-type="inline" data-gall="portfolio" data-pt-title="LAFAYETTE UNIFORME" style="background-image:url(img/thumbs/thumb_lafayette.jpg)">
-					<div class="pt-overinfo">
-						<h2>LAFAYETTE UNIFORME</h2>
-						<div class="partner">Pixelpro</div>
-					</div>
-				</a>
-				<div id="modal-321" style="display:none">
-					<div class="pt-inn">
-						<div class="row">
-							<div class="col-md-3"></div>
-							<div class="col-md-6">
-								<h2>LAFAYETTE UNIFORME</h2>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">El<br>Reto</span> <span class="txt-en">The<br>Challenge</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div>
-									<p class="txt-es">Trabajando en una agencia te encuentras con retos bien interesantes. Por ejemplo migrar todo un sitio web desde un CMS desconocido a un WordPress completamente nuevo, sin tener ningún tipo de acceso a código fuente o contenidos y teniendo que realizar un trabajo transparente para el cliente y los usuarios.</p>
-								</div>
-								<div>
-									<p class="txt-en">Working in an agency you meet with very interesting challenges. For example, migrate an entire website from an unknown CMS to a completely new WordPress, without having any access to contents or source code and having to perform a transparent work for the client and users.</p>
-								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="tasks">
-									<ul>
-										<li><span>Custom CMS Development</span></li>
-										<li><span>HTML - CSS - JavaScript</span></li>
-									</ul>
-								</div><img src="img/thumbs/thumb_lafayette.jpg" class="wp_img" alt="">
-								<div class="with">
-									<h3>Working with:</h3><span class="partner">Pixelpro</span> <span class="date">2016 - December</span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<h3 class="text-right"><span class="txt-es">La<br>Solución</span> <span class="txt-en">The<br>Answer</span></h3>
-							</div>
-							<div class="col-md-6">
-								<div>
-									<p class="txt-es">El ejercicio fue una labor extenuante teniendo que desarrollando un diseño bastante popular entre la comunidad de usuarios sobre una plataforma diferente para la cual fue creado, manteniendo exactamente la misma UX and UI pero ofreciendo las prestaciones y comodidades del CMS mas popular del mercado. Supongo que la mayor satisfacción es saber que prácticamente ningún usuario se dio cuenta del cambio entre el antiguo y el nuevo sitio web, lo que era nuestro principal objetivo.</p>
-								</div>
-								<div>
-									<p class="txt-en">The exercise was a strenuous task having to develop a design quite popular among the community of users on a different platform for which it was created, maintaining exactly the same UX and UI but offering the benefits and amenities of the most popular CMS on the market. I guess the biggest satisfaction is knowing that virtually no user noticed the change between the old and the new website, which was our main goal.</p>
-								</div>
-							</div>
-							<div class="col-md-3"></div>
-						</div><a href="http://www.uniformelafayette.com/" class="btn-block" target="_blank">visit the site</a>
-					</div>
-				</div>
-			</article>
-		</div>
-	</section>
-	<section id="passion">
-		<div class="tblr-box">
-			<h3 class="tblr-box_headline txt-en">DOER <span class="font-theme">[passion]</span></h3>
-			<h3 class="tblr-box_headline txt-es">DOER <span class="font-theme">[pasión]</span></h3>
-			<div class="tblr-box_content">
-				<table class="techne-wrp" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-						<tr>
-							<td class="episteme-wrp">
-								<h3>Episteme</h3>
-								<div class="pasion-txt-wrp">
-									<div class="txt-es">
-										<p>Recuerdo el mundo sin computadoras ni redes sociales, pero tambien formé parte de la revolución de internet, por lo que cada vez más quería ser un rompedor de reglas.</p>
-										<p>Ahora soy un ciclista urbano, productor aficionado de música electrónica. Un soñador minimalista y diseñador idealista que cree en el diseño más que como un trabajo para insertar píxeles en una pantalla como una forma de vida para transformar el mundo.</p>
-										<p>Me apasiona crear experiencias e interfaces pero la habilidad mas importante que deseo alcanzar es el entendimiento del comportamiento de los seres humanos para crear productos únicos que generen valor.</p>
-									</div>
-									<div class="txt-en">
-										<p>I remember the world without computers and social network but made part of the internet revolution so I grow wanted to be a ruler breaker.</p>
-										<p>Now I'm an urban bicycle rider, amateur electronic music producer and idealist designer that believe in design more than a job to push pixels in a screen as a way of life to transform the world.</p>
-										<p>I love to create interfaces and experiences but the most important skill I want to achieve is the understand of human behaviors to create unique products.</p>
-									</div>
-								</div>
-							</td>
-							<td class="stats-wrp">
-								<h3>Techne</h3>
-								<div class="txt-en">
-									<ul style="padding-left:18px!important">
-										<li>Research</li>
-										<li>Wireframing and UI</li>
-										<li>Interaction Design</li>
-										<li>Prototyping</li>
-										<li>Visual Communication</li>
-										<li>Front-end</li>
-									</ul>
-									<p>Over the years I've developed different skills. I use research techniques and information analysis to design human experiences and manipulate tech tools to give life to visual designs. I create with code too.</p>
-								</div>
-								<div class="txt-es">
-									<ul style="padding-left:18px!important">
-										<li>Investigación de usuarios</li>
-										<li>Wireframing y UI</li>
-										<li>Diseño de interacción</li>
-										<li>Prototipado</li>
-										<li>Comunicación Visual</li>
-										<li>Front-end</li>
-									</ul>
-									<p>A travez de los años he desarrollado diferentes habilidades. Utilizo técnicas de investigación y análisis de información para diseñar experiencias humanas y manipulo herramientas tecnológicas para dar vida a diseños visuales. También se diseñar con código.</p>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<div class="tech-footer txt-es">
-					<h3 style="display:inline">FORTALEZAS</h3>
-					<p>Flexibilidad y Adaptabilidad, Negociación, Persuasión, Mentalidad de negocios y estrategia, Amor al aprendizaje, Escuchar y hablar, Pasión, Pensamiento critico y análisis, Humildad y Empatía.</p>
-				</div>
-				<div class="tech-footer txt-en">
-					<h3 style="display:inline">STRENGTHS</h3>
-					<p>Flexibility, Being a mediator, Persuasiveness, Business and strategic mindset, Love of learning, Empathy, Listening and speech, Passion, Critical thinking and analysis, Humility, Writing skills.</p>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section id="touch">
-		<div class="plx-header">
-			<div class="header-bg bg-touch"></div>
-			<div class="contact-wrp">
-				<div class="emailbox" style="background:0 0">
-					<h3 class="txt-en">DESIGNER <b class="font-theme">[GET IN TUUX]</b></h3>
-					<h3 class="txt-es">DISEÑADOR <b class="font-theme">[CONTACTO]</b></h3><span>daniel@tuux.co</span> Bogotá, Colombia
-				</div>
-				<ul>
-					<li><a href="https://co.linkedin.com/in/dtuux" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-					<li><a href="https://www.behance.net/tuux" target="_blank"><i class="fa fa-behance-square"></i></a></li>
-					<li><a href="https://www.youtube.com/channel/UCvXz_3Rx1YsKu-icgXV5QsA/videos" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
-					<li><a href="https://github.com/tuuxdev" target="_blank"><i class="fa fa-github-square"></i></a></li>
-					<li><a href="https://soundcloud.com/totalinspector" target="_blank"><i class="fa fa-plus-square"></i></a></li>
+		</section>
+		<footer class="hero_footer text-right" style="margin: 56px;">
+			<div class="d-flex space-between align-bottom">
+				<a class="fancy-link down to-anchor" href="#hero" data-icon="">
+					<span class="txt-es">Ir arriba</span>
+					<span class="txt-en">Back to top</span>
+				</a>
+				<ul class="social_links">
+					<li><a href="mailto:daniel@tuux.com"><i class="fa fa-envelope"></i> Email</a></li>
+					<li><a href="https://co.linkedin.com/in/dtuux" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+					<li><a href="https://www.behance.net/tuux" target="_blank"><i class="fa fa-behance-square"></i> Behance</a></li>
+					<li><a href="https://github.com/tuuxdev" target="_blank"><i class="fa fa-github-square"></i> GitHub</a></li>
+					<li><a href="https://kubeats.bandcamp.com" target="_blank"><i class="fa fa-bandcamp"></i> Bandcamp</a></li>
 				</ul>
 			</div>
-		</div>
-	</section>
-	<a href="mailto:daniel@tuux.co" class="btn-next">daniel@tuux.co</a>
-	<script src="js/plugins/modernizr.js"></script>
-	<script src="js/plugins/venobox.js"></script>
-	<script src="js/plugins/scrollreveal.min.js"></script>
+		</footer>
+	</main>
+	<script src="https://kit.fontawesome.com/5966a6ab07.js" crossorigin="anonymous"></script>
+	<script src="js/plugins/venobox.min.js"></script>
+	<script src="js/plugins/rellax.min.js"></script>
 	<script src="js/app.min.js"></script>
 </body>
 
