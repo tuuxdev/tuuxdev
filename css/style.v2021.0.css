@@ -441,6 +441,14 @@ h2 {
     font-size: 13px;
   }
 
+  header h1 {
+    font-size: 2em;
+  }
+
+  .case .case_description h2 {
+    font-size: 2em;
+  }
+
   .section-padding {
     padding: 32px;
   }
@@ -510,5 +518,30 @@ h2 {
 
   footer {
     margin: 32px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  header .hero_footer {
+    text-align: left;
+  }
+
+  header .hero_footer>div {
+    display: block;
+  }
+
+  header .hero_footer .fancy-link {
+    margin-bottom: 32px;
+  }
+
+  header .hero_footer .social_links {
+    position: relative;
+    padding: 0;
+  }
+
+  header .hero_footer .social_links li {
+    display: inline-block;
+    padding-right: 8px;
   }
 }
