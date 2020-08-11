@@ -466,6 +466,7 @@ h2 {
   }
 
   .process-flow {
+    max-width: 100%;
     flex-direction: column;
     float: none;
   }
