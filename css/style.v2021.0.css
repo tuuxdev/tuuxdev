@@ -209,8 +209,10 @@ h2 {
   grid-template-areas: "hero_logo hero_nav""hero_headline hero_headline""hero_footer hero_footer";
   align-items: center;
   height: calc(100vh - 112px);
+
 }
 
+.hero_bg_outlines,
 .hero_bg {
   position: absolute;
   width: 100%;
@@ -223,6 +225,14 @@ h2 {
   background-size: cover;
   filter: grayscale(100%);
   overflow: hidden;
+}
+
+.hero_bg_outlines {
+  background-image: url(../img/thumbs_outlines/bg-about_outlines.svg);
+}
+
+.outlines {
+  opacity: .6;
 }
 
 .hero_logo {
@@ -318,8 +328,8 @@ h2 {
 
 .case .case_description,
 .case .case_thumb {
-  padding-left: 1em;
-  padding-right: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .case .case_description {
@@ -332,6 +342,7 @@ h2 {
 }
 
 .case .case_thumb {
+  position: relative;
   max-width: 320px;
   z-index: -1;
 }
@@ -341,6 +352,15 @@ h2 {
   width: 100%;
   border-radius: 2px;
   filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
+}
+
+.case .case_thumb .main_thumb {
+  filter: grayscale(1);
+  opacity: .1;
+}
+
+.case .case_thumb .outline_thumb {
+  margin-top: -100%;
 }
 
 .case-item_info {
