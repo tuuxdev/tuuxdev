@@ -434,7 +434,7 @@ input:checked+.slider:before {
 .case .case_thumb img {
   width: 100%;
   border-radius: 2px;
-  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
 }
 
 .case .case_thumb .main_thumb {
@@ -469,6 +469,15 @@ input:checked+.slider:before {
 
 .case-item_img {
   margin: 4em 0;
+}
+
+.case-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 2em;
 }
 
 .case_quote {
