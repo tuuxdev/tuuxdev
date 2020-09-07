@@ -175,6 +175,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.text-primary {
+  color: var(--primary) !important;
+}
+
 .fancy-link:before {
   content: attr(data-icon);
   display: inline-block;
@@ -238,10 +242,11 @@ h2 {
 
 .hero_bg_outlines {
   background-image: url(../img/thumbs_outlines/bg-about_outlines.svg);
+  opacity: 0 !important;
 }
 
 .outlines {
-  opacity: .6;
+  opacity: .8;
 }
 
 [data-theme="dark"] .outlines {
