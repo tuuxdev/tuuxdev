@@ -314,6 +314,7 @@ h2 {
   top: 0;
   transition: .4s;
   background-color: #ccc;
+  border: 1px solid var(--white);
 }
 
 .slider:before {
@@ -321,10 +322,10 @@ h2 {
   position: absolute;
   width: 12px;
   height: 12px;
-  left: 4px;
-  bottom: 2px;
+  left: 2px;
+  bottom: 1px;
   transition: .4s;
-  background-color: white;
+  background-color: var(--white);
 }
 
 input:checked+.slider {
@@ -332,7 +333,7 @@ input:checked+.slider {
 }
 
 input:checked+.slider:before {
-  transform: translateX(12px);
+  transform: translateX(14px);
 }
 
 .slider.round {
@@ -341,6 +342,14 @@ input:checked+.slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+[data-theme="dark"] .slider {
+  border-color: var(--black);
+}
+
+[data-theme="dark"] .slider:before {
+  background-color: var(--black);
 }
 
 /* END THEME TOOGLE */
