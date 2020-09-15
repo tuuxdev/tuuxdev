@@ -233,7 +233,7 @@ h2 {
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: .08;
+  opacity: .2;
   background-image: url(../img/bg-about.jpg);
   background-size: cover;
   filter: grayscale(100%);
@@ -439,11 +439,11 @@ input:checked+.slider:before {
 
 .case .case_thumb .main_thumb {
   filter: grayscale(1);
-  opacity: .1;
+  opacity: .2;
 }
 
 [data-theme="light"] .main_thumb {
-  opacity: .2 !important;
+  opacity: .3 !important;
 }
 
 .case .case_thumb .outline_thumb {
